@@ -1,0 +1,52 @@
+<plugin>
+	<extension
+            point="com.katalon.platform.extensions">
+        <point
+              id="com.katalon.plugin.octane.OctaneActivationListener"
+              extensionPointId="com.katalon.platform.api.extension.pluginActivationListener"
+              implementationClass="com.katalon.plugin.octane.OctaneActivationListener">
+        </point>
+    </extension>
+    <extension
+            point="com.katalon.platform.extensions">
+        <point
+                id="com.katalon.plugin.octane.OctaneToolItemDescription"
+                extensionPointId="com.katalon.platform.api.extension.newToolItem"
+                implementationClass="com.katalon.plugin.octane.OctaneToolItemDescription">
+        </point>
+    </extension>
+    <extension
+         point="com.katalon.platform.extensions">
+      <point
+            id="com.katalon.plugin.octane.OctanePluginPreferencePage"
+            extensionPointId="com.katalon.platform.api.extension.pluginPreferencePage"
+            implementationClass="com.katalon.plugin.octane.OctanePluginPreferencePage">
+      </point>
+    </extension> 
+    <extension
+            point="com.katalon.platform.extensions">
+        <point
+                id="com.katalon.plugin.octane.OctaneTestCaseIntegrationPage"
+                extensionPointId="com.katalon.platform.api.extension.testCaseIntegrationViewDescription"
+                implementationClass="com.katalon.plugin.octane.OctaneTestCaseIntegrationViewDescription">
+        </point>
+    </extension>  
+    <!-- TODO -->
+    
+    <extension
+            point="com.katalon.platform.extensions">
+        <point
+                id="com.katalon.plugin.octane.OctaneEventListenerInitializer"
+                extensionPointId="com.katalon.platform.api.extension.eventListener"
+                implementationClass="com.katalon.plugin.octane.OctaneEventListenerInitializer">
+        </point>
+    </extension>
+    <extension
+            point="com.katalon.platform.extensions">
+        <point
+                id="com.katalon.plugin.dynamic_execution.OctaneFilteringTestSuiteImpl"
+                extensionPointId="com.katalon.platform.api.extension.dynamicQueryingTestSuiteDescription"
+                implementationClass="com.katalon.plugin.octane.OctaneQueryingTestSuite">
+        </point>
+    </extension>
+</plugin>

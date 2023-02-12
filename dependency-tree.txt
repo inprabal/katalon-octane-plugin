@@ -1,0 +1,114 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.pb.katalon:katalon-octane-plugin:bundle:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.felix:maven-bundle-plugin is missing. @ line 106, column 12
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ----------------< com.pb.katalon:katalon-octane-plugin >----------------
+[INFO] Building katalon-octane-plugin 1.0-SNAPSHOT
+[INFO] -------------------------------[ bundle ]-------------------------------
+[WARNING] The POM for org.eclipse.platform:org.eclipse.swt:jar:3.105.3 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.4:tree (default-cli) @ katalon-octane-plugin ---
+[WARNING] Invalid POM for org.eclipse.platform:org.eclipse.swt:jar:3.105.3, transitive dependencies (if any) will not be available, enable debug logging for more details
+[INFO] artifact org.eclipse.platform:org.eclipse.osgi: checking for updates from central
+[INFO] artifact org.eclipse.platform:org.eclipse.core.jobs: checking for updates from central
+[INFO] artifact org.eclipse.platform:org.eclipse.core.contenttype: checking for updates from central
+[INFO] artifact org.eclipse.platform:org.eclipse.equinox.app: checking for updates from central
+[INFO] artifact org.eclipse.platform:org.eclipse.e4.core.di: checking for updates from central
+[INFO] artifact jakarta.annotation:jakarta.annotation-api: checking for updates from central
+[INFO] artifact javax.inject:javax.inject: checking for updates from central
+[INFO] artifact org.eclipse.platform:org.eclipse.e4.core.di.extensions: checking for updates from central
+[INFO] artifact org.eclipse.platform:org.eclipse.core.expressions: checking for updates from central
+[INFO] artifact org.eclipse.emf:org.eclipse.emf.ecore.xmi: checking for updates from central
+[INFO] artifact org.eclipse.emf:org.eclipse.emf.ecore: checking for updates from central
+[INFO] artifact org.eclipse.emf:org.eclipse.emf.common: checking for updates from central
+[INFO] artifact org.eclipse.platform:org.eclipse.e4.ui.services: checking for updates from central
+[INFO] artifact org.eclipse.platform:org.eclipse.e4.emf.xpath: checking for updates from central
+[INFO] artifact org.eclipse.emf:org.eclipse.emf.ecore.change: checking for updates from central
+[WARNING] Invalid POM for org.eclipse.platform:org.eclipse.swt:jar:3.105.3, transitive dependencies (if any) will not be available, enable debug logging for more details
+[INFO] com.pb.katalon:katalon-octane-plugin:bundle:1.0-SNAPSHOT
+[INFO] +- com.microfocus.adm.almoctane.sdk:sdk-src:jar:16.1.100.1:compile
+[INFO] |  +- com.google.http-client:google-http-client:jar:1.42.0:compile
+[INFO] |  |  +- com.google.code.findbugs:jsr305:jar:3.0.2:compile
+[INFO] |  |  +- com.google.guava:guava:jar:30.1.1-android:compile
+[INFO] |  |  |  +- com.google.guava:failureaccess:jar:1.0.1:compile
+[INFO] |  |  |  +- com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile
+[INFO] |  |  |  +- org.checkerframework:checker-compat-qual:jar:2.5.5:compile
+[INFO] |  |  |  \- com.google.errorprone:error_prone_annotations:jar:2.5.1:compile
+[INFO] |  |  +- com.google.j2objc:j2objc-annotations:jar:1.3:compile
+[INFO] |  |  +- io.opencensus:opencensus-api:jar:0.31.1:compile
+[INFO] |  |  |  \- io.grpc:grpc-context:jar:1.27.2:compile
+[INFO] |  |  \- io.opencensus:opencensus-contrib-http-util:jar:0.31.1:compile
+[INFO] |  +- com.google.http-client:google-http-client-jackson2:jar:1.42.0:compile
+[INFO] |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.13.3:compile
+[INFO] |  +- com.google.http-client:google-http-client-gson:jar:1.42.0:compile
+[INFO] |  |  \- com.google.code.gson:gson:jar:2.9.0:compile
+[INFO] |  +- org.eclipse.jetty:jetty-client:jar:9.4.49.v20220914:compile
+[INFO] |  |  +- org.eclipse.jetty:jetty-http:jar:9.4.49.v20220914:compile
+[INFO] |  |  |  \- org.eclipse.jetty:jetty-util:jar:9.4.49.v20220914:compile
+[INFO] |  |  \- org.eclipse.jetty:jetty-io:jar:9.4.49.v20220914:compile
+[INFO] |  +- org.eclipse.jetty.http2:http2-client:jar:9.4.49.v20220914:compile
+[INFO] |  |  +- org.eclipse.jetty.http2:http2-common:jar:9.4.49.v20220914:compile
+[INFO] |  |  |  \- org.eclipse.jetty.http2:http2-hpack:jar:9.4.49.v20220914:compile
+[INFO] |  |  \- org.eclipse.jetty:jetty-alpn-client:jar:9.4.49.v20220914:compile
+[INFO] |  +- org.eclipse.jetty.http2:http2-http-client-transport:jar:9.4.49.v20220914:compile
+[INFO] |  |  \- org.eclipse.jetty:jetty-alpn-java-client:jar:9.4.49.v20220914:compile
+[INFO] |  +- org.json:json:jar:20160212:compile
+[INFO] |  +- org.apache.commons:commons-lang3:jar:3.12.0:compile
+[INFO] |  +- commons-io:commons-io:jar:2.11.0:compile
+[INFO] |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO] +- com.katalon:com.katalon.platform:jar:1.0.21:compile
+[INFO] |  +- org.eclipse.platform:org.eclipse.swt:jar:3.105.3:provided (scope managed from compile)
+[INFO] |  +- org.eclipse.platform:org.eclipse.core.runtime:jar:3.12.0:provided (scope managed from compile)
+[INFO] |  |  +- org.eclipse.platform:org.eclipse.osgi:jar:3.18.200:provided
+[INFO] |  |  +- org.eclipse.platform:org.eclipse.core.jobs:jar:3.13.200:provided
+[INFO] |  |  +- org.eclipse.platform:org.eclipse.equinox.registry:jar:3.8.800:provided
+[INFO] |  |  +- org.eclipse.platform:org.eclipse.core.contenttype:jar:3.8.200:provided
+[INFO] |  |  \- org.eclipse.platform:org.eclipse.equinox.app:jar:1.6.200:provided
+[INFO] |  +- org.eclipse.platform:org.eclipse.e4.core.contexts:jar:1.5.1:provided (scope managed from compile)
+[INFO] |  |  \- org.eclipse.platform:org.eclipse.e4.core.di:jar:1.8.300:provided
+[INFO] |  |     +- jakarta.annotation:jakarta.annotation-api:jar:1.3.5:provided
+[INFO] |  |     \- javax.inject:javax.inject:jar:1:provided
+[INFO] |  +- org.eclipse.platform:org.eclipse.e4.core.services:jar:2.0.100:provided (scope managed from compile)
+[INFO] |  +- org.eclipse.platform:org.eclipse.e4.ui.workbench:jar:1.5.1:provided (scope managed from compile)
+[INFO] |  |  +- org.eclipse.platform:org.eclipse.e4.core.di.extensions:jar:0.17.200:provided
+[INFO] |  |  +- org.eclipse.platform:org.eclipse.core.expressions:jar:3.8.200:provided
+[INFO] |  |  +- org.eclipse.emf:org.eclipse.emf.ecore.xmi:jar:2.17.0:provided
+[INFO] |  |  +- org.eclipse.platform:org.eclipse.e4.ui.services:jar:1.5.100:provided
+[INFO] |  |  \- org.eclipse.emf:org.eclipse.emf.ecore.change:jar:2.14.0:provided
+[INFO] |  +- org.eclipse.platform:org.eclipse.e4.ui.di:jar:1.1.100:provided
+[INFO] |  +- org.eclipse.platform:org.eclipse.e4.core.commands:jar:0.11.100:provided
+[INFO] |  +- org.eclipse.platform:org.eclipse.core.commands:jar:3.8.1:provided
+[INFO] |  +- org.eclipse.platform:org.eclipse.e4.ui.model.workbench:jar:1.2.0:provided
+[INFO] |  |  +- org.eclipse.emf:org.eclipse.emf.ecore:jar:2.29.0:provided
+[INFO] |  |  |  \- org.eclipse.emf:org.eclipse.emf.common:jar:2.27.0:provided
+[INFO] |  |  \- org.eclipse.platform:org.eclipse.e4.emf.xpath:jar:0.3.100:provided
+[INFO] |  |     \- commons-jxpath:commons-jxpath:jar:1.3:provided
+[INFO] |  +- org.eclipse.platform:org.eclipse.osgi.services:jar:3.5.100:provided
+[INFO] |  +- org.eclipse.platform:org.eclipse.swt.cocoa.macosx.x86_64:jar:3.105.3:provided (scope managed from compile)
+[INFO] |  +- org.eclipse.platform:org.eclipse.swt.win32.win32.x86_64:jar:3.105.3:provided (scope managed from compile)
+[INFO] |  +- org.eclipse.platform:org.eclipse.swt.gtk.linux.x86_64:jar:3.105.3:provided (scope managed from compile)
+[INFO] |  +- org.osgi:org.osgi.service.event:jar:1.4.0:provided (scope managed from compile)
+[INFO] |  +- org.eclipse.platform:org.eclipse.equinox.preferences:jar:3.6.1:provided
+[INFO] |  +- org.eclipse.platform:org.eclipse.e4.core.di.annotations:jar:1.5.0:provided
+[INFO] |  +- org.eclipse.platform:org.eclipse.jface:jar:3.12.2:provided (scope managed from compile)
+[INFO] |  +- org.apache.commons:commons-text:jar:1.6:provided (scope managed from compile)
+[INFO] |  +- org.apache.httpcomponents:httpclient:jar:4.5.1:provided
+[INFO] |  |  +- commons-logging:commons-logging:jar:1.2:provided
+[INFO] |  |  \- commons-codec:commons-codec:jar:1.9:provided
+[INFO] |  +- org.apache.httpcomponents:httpcore:jar:4.4.4:provided
+[INFO] |  +- org.apache.httpcomponents:httpmime:jar:4.5.1:provided (scope managed from compile)
+[INFO] |  \- org.eclipse.platform:org.eclipse.equinox.common:jar:3.12.0:compile
+[INFO] \- junit:junit:jar:4.11:test
+[INFO]    \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12.132 s
+[INFO] Finished at: 2023-02-07T07:38:40+05:30
+[INFO] ------------------------------------------------------------------------
