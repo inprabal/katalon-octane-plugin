@@ -18,7 +18,7 @@ public class WorkItemEntityModel extends TypedEntityModel implements WorkItemEnt
         super(wrappedEntityModel);
     }
 
-            public WorkItemEntityModel(    final String name, final FeatureEntityModel parent, final PhaseEntityModel phase, final String subtype) {
+            public WorkItemEntityModel(    final String name, final EpicEntityModel parent, final PhaseEntityModel phase, final String subtype) {
         this();
                     setName(name);
             setParent(parent);
@@ -32,7 +32,7 @@ public class WorkItemEntityModel extends TypedEntityModel implements WorkItemEnt
             setPhase(phase);
             setSubtype(subtype);
         }
-        public WorkItemEntityModel(    final String name, final EpicEntityModel parent, final PhaseEntityModel phase, final String subtype) {
+        public WorkItemEntityModel(    final String name, final FeatureEntityModel parent, final PhaseEntityModel phase, final String subtype) {
         this();
                     setName(name);
             setParent(parent);
@@ -890,10 +890,10 @@ public java.util.Collection<RunEntity> getRun(){
             final String referenceType = type.getValue();
                             if (referenceType.equals("run_suite")) {
 				    return new RunSuiteEntityModel(entityModel);
-				}                else if (referenceType.equals("run_manual")) {
-				    return new RunManualEntityModel(entityModel);
 				}                else if (referenceType.equals("run_automated")) {
 				    return new RunAutomatedEntityModel(entityModel);
+				}                else if (referenceType.equals("run_manual")) {
+				    return new RunManualEntityModel(entityModel);
 				}                else if (referenceType.equals("gherkin_automated_run")) {
 				    return new GherkinAutomatedRunEntityModel(entityModel);
 				}else {
@@ -1065,10 +1065,10 @@ public java.util.Collection<RunEntity> getLinkedRuns(){
             final String referenceType = type.getValue();
                             if (referenceType.equals("run_suite")) {
 				    return new RunSuiteEntityModel(entityModel);
-				}                else if (referenceType.equals("run_manual")) {
-				    return new RunManualEntityModel(entityModel);
 				}                else if (referenceType.equals("run_automated")) {
 				    return new RunAutomatedEntityModel(entityModel);
+				}                else if (referenceType.equals("run_manual")) {
+				    return new RunManualEntityModel(entityModel);
 				}                else if (referenceType.equals("gherkin_automated_run")) {
 				    return new GherkinAutomatedRunEntityModel(entityModel);
 				}else {

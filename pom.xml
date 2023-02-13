@@ -32,10 +32,10 @@
 			<version>1.0.21</version>
 		</dependency>
 		<dependency>
-            <groupId>com.googlecode.json-simple</groupId>
-            <artifactId>json-simple</artifactId>
-            <version>1.1.1</version>
-        </dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
+		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -43,6 +43,79 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<profiles>
+		<profile>
+			<id>generate-sources</id>
+			<build>
+				<plugins>
+					<!-- Octane plugin -->
+					<plugin>
+						<groupId>com.microfocus.adm.almoctane.sdk</groupId>
+						<artifactId>sdk-generate-entity-models-maven-plugin</artifactId>
+						<version>16.1.100.1</version>
+						<executions>
+							<execution>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>generate</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<clientId>MyAPItest_ed81wo3m480d8uqx2ye1rw7no</clientId>
+							<clientSecret>)1641019824224521252250V</clientSecret>
+							<server>https://almoctane-apj.saas.microfocus.com</server>
+							<sharedSpace>179014</sharedSpace>
+							<workSpace>1002</workSpace>
+							<techPreview>false</techPreview>
+							<!--
+                        By default the plugin will generate the sources to the generated-source directory under
+                        the target.  If you wish to place this in a different place then use this parameter
+                    -->
+							<generatedSourcesDirectory>${project.build.sourceDirectory}</generatedSourcesDirectory>
+						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>build-helper-maven-plugin</artifactId>
+						<version>1.9.1</version>
+						<executions>
+							<execution>
+								<id>addGeneratedEntitiesSources</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>add-source</goal>
+								</goals>
+								<configuration>
+									<sources>
+										<!--
+                                  This assumes that you leave the configuration of the plugin above
+                                  to use the maven generated-sources directory as the place where the generated
+                                  sources will be
+                                -->
+										<!-- source>${project.build.directory}/generated-sources</source -->
+										<source>${project.build.sourceDirectory}</source>
+									</sources>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+					<!--
+                The sources need to be compiled using Java 8 at least.  Use this if this needs to 
+                be explicit
+            -->
+					<plugin>
+						<artifactId>maven-compiler-plugin</artifactId>
+						<version>3.5.1</version>
+						<configuration>
+							<source>1.8</source>
+							<target>1.8</target>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 	<build>
 		<pluginManagement>
 			<!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
@@ -125,72 +198,19 @@
 					</instructions>
 				</configuration>
 			</plugin>
-			<!-- Octane plugin -->
-			<plugin>
-                <groupId>com.microfocus.adm.almoctane.sdk</groupId>
-                <artifactId>sdk-generate-entity-models-maven-plugin</artifactId>
-                <version>16.1.100.1</version>
-                <executions>
-                    <execution>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <clientId>MyAPItest_ed81wo3m480d8uqx2ye1rw7no</clientId>
-                    <clientSecret>)1641019824224521252250V</clientSecret>
-                    <server>https://almoctane-apj.saas.microfocus.com</server>
-                    <sharedSpace>179014</sharedSpace>
-                    <workSpace>1002</workSpace>
-                    <techPreview>false</techPreview>
-                    <!--
-                        By default the plugin will generate the sources to the generated-source directory under
-                        the target.  If you wish to place this in a different place then use this parameter
-                    -->
-                    <generatedSourcesDirectory>${project.build.sourceDirectory}</generatedSourcesDirectory>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>build-helper-maven-plugin</artifactId>
-                <version>1.9.1</version>
-                <executions>
-                    <execution>
-                        <id>addGeneratedEntitiesSources</id>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>add-source</goal>
-                        </goals>
-                        <configuration>
-                            <sources>
-                                <!--
-                                  This assumes that you leave the configuration of the plugin above
-                                  to use the maven generated-sources directory as the place where the generated
-                                  sources will be
-                                -->
-                                <!-- source>${project.build.directory}/generated-sources</source -->
-                                
-                                <source>${project.build.sourceDirectory}</source>
-                            </sources>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <!--
+			
+			<!--
                 The sources need to be compiled using Java 8 at least.  Use this if this needs to 
                 be explicit
             -->
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.5.1</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-			
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>

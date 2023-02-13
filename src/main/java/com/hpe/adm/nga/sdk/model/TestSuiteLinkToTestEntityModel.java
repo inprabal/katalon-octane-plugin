@@ -18,17 +18,17 @@ public class TestSuiteLinkToTestEntityModel extends TypedEntityModel implements 
         super(wrappedEntityModel);
     }
 
-            public TestSuiteLinkToTestEntityModel(    final TestAutomatedEntityModel test, final TestSuiteEntityModel test_suite) {
+            public TestSuiteLinkToTestEntityModel(    final TestManualEntityModel test, final TestSuiteEntityModel test_suite) {
+        this();
+                    setTest(test);
+            setTestSuite(test_suite);
+        }
+        public TestSuiteLinkToTestEntityModel(    final TestAutomatedEntityModel test, final TestSuiteEntityModel test_suite) {
         this();
                     setTest(test);
             setTestSuite(test_suite);
         }
         public TestSuiteLinkToTestEntityModel(    final GherkinTestEntityModel test, final TestSuiteEntityModel test_suite) {
-        this();
-                    setTest(test);
-            setTestSuite(test_suite);
-        }
-        public TestSuiteLinkToTestEntityModel(    final TestManualEntityModel test, final TestSuiteEntityModel test_suite) {
         this();
                     setTest(test);
             setTestSuite(test_suite);

@@ -32,7 +32,7 @@ public class TestVersionEntityModel extends TypedEntityModel implements TestVers
 	}
 
         /**
-	* Label: Creator
+	* Label: Author
 	* Description: 
 	*/
     public String getCreator(){
@@ -148,7 +148,7 @@ public <T extends TestEntity> T getTest(){
 	}
 
         /**
-	* Label: Version
+	* Label: Version Name
 	* Description: 
 	*/
     public String getComment(){

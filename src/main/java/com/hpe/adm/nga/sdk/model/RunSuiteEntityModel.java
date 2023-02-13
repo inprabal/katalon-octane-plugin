@@ -451,10 +451,10 @@ public java.util.Collection<RunEntity> getRunsInSuite(){
                         return value.stream().map(entityModel -> {
             final StringFieldModel type = (StringFieldModel) entityModel.getValue("type");
             final String referenceType = type.getValue();
-                            if (referenceType.equals("run_manual")) {
-				    return new RunManualEntityModel(entityModel);
-				}                else if (referenceType.equals("run_automated")) {
+                            if (referenceType.equals("run_automated")) {
 				    return new RunAutomatedEntityModel(entityModel);
+				}                else if (referenceType.equals("run_manual")) {
+				    return new RunManualEntityModel(entityModel);
 				}                else if (referenceType.equals("gherkin_automated_run")) {
 				    return new GherkinAutomatedRunEntityModel(entityModel);
 				}else {

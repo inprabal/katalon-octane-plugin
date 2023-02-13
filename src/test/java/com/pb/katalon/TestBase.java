@@ -22,7 +22,7 @@ public class TestBase {
     private static String entityTypeOld = "";
     protected static EntityList entityList;
     protected static Metadata metadata;
-
+ 
     static {
         // for local execution
         if (System.getProperty("should.set.proxy") == null) {

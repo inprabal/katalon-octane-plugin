@@ -24,7 +24,7 @@ public class RunEntityModel extends TypedEntityModel implements RunEntity {
             setSubtype(subtype);
             setTest(test);
         }
-        public RunEntityModel(    final String name, final String subtype, final TestAutomatedEntityModel test) {
+        public RunEntityModel(    final String name, final String subtype, final GherkinTestEntityModel test) {
         this();
                     setName(name);
             setSubtype(subtype);
@@ -36,7 +36,7 @@ public class RunEntityModel extends TypedEntityModel implements RunEntity {
             setSubtype(subtype);
             setTest(test);
         }
-        public RunEntityModel(    final String name, final String subtype, final GherkinTestEntityModel test) {
+        public RunEntityModel(    final String name, final String subtype, final TestAutomatedEntityModel test) {
         this();
                     setName(name);
             setSubtype(subtype);
@@ -368,10 +368,10 @@ public java.util.Collection<RunEntity> getRunsInSuite(){
                         return value.stream().map(entityModel -> {
             final StringFieldModel type = (StringFieldModel) entityModel.getValue("type");
             final String referenceType = type.getValue();
-                            if (referenceType.equals("run_manual")) {
-				    return new RunManualEntityModel(entityModel);
-				}                else if (referenceType.equals("run_automated")) {
+                            if (referenceType.equals("run_automated")) {
 				    return new RunAutomatedEntityModel(entityModel);
+				}                else if (referenceType.equals("run_manual")) {
+				    return new RunManualEntityModel(entityModel);
 				}                else if (referenceType.equals("gherkin_automated_run")) {
 				    return new GherkinAutomatedRunEntityModel(entityModel);
 				}else {

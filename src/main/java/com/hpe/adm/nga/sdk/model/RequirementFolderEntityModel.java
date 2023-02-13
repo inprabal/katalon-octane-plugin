@@ -18,12 +18,12 @@ public class RequirementFolderEntityModel extends TypedEntityModel implements Re
         super(wrappedEntityModel);
     }
 
-            public RequirementFolderEntityModel(    final String name, final RequirementRootEntityModel parent) {
+            public RequirementFolderEntityModel(    final String name, final RequirementFolderEntityModel parent) {
         this();
                     setName(name);
             setParent(parent);
         }
-        public RequirementFolderEntityModel(    final String name, final RequirementFolderEntityModel parent) {
+        public RequirementFolderEntityModel(    final String name, final RequirementRootEntityModel parent) {
         this();
                     setName(name);
             setParent(parent);

@@ -330,15 +330,15 @@ public <T extends TestEntity> T getMyFollowItemsTest(){
 	final EntityModel referenceFieldModel = my_follow_items_test.getValue();
         final StringFieldModel type = (StringFieldModel) referenceFieldModel.getValue("type");
 	final String referenceType = type.getValue();
-            if (referenceType.equals("test_manual")) {
-			    return (T) new TestManualEntityModel(referenceFieldModel);
-			}else if (referenceType.equals("gherkin_test")) {
+            if (referenceType.equals("gherkin_test")) {
 			    return (T) new GherkinTestEntityModel(referenceFieldModel);
+			}else if (referenceType.equals("test_manual")) {
+			    return (T) new TestManualEntityModel(referenceFieldModel);
 			}                return (T) new TestEntityModel(referenceFieldModel);
     }
 
                         @FieldMetadata(filterable = true, sortable = false, required = false)
-        public UserItemEntityModel setMyFollowItemsTest(final TestManualEntityModel myFollowItemsTest){
+        public UserItemEntityModel setMyFollowItemsTest(final GherkinTestEntityModel myFollowItemsTest){
 			if (myFollowItemsTest == null) {
 			    wrappedEntityModel.removeValue("my_follow_items_test");
 			} else {
@@ -348,7 +348,7 @@ public <T extends TestEntity> T getMyFollowItemsTest(){
         }
 
         @FieldMetadata(filterable = true, sortable = false, required = false)
-        public UserItemEntityModel setMyFollowItemsTest(final GherkinTestEntityModel myFollowItemsTest){
+        public UserItemEntityModel setMyFollowItemsTest(final TestManualEntityModel myFollowItemsTest){
 			if (myFollowItemsTest == null) {
 			    wrappedEntityModel.removeValue("my_follow_items_test");
 			} else {

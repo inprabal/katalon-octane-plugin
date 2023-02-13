@@ -130,7 +130,7 @@ public <T extends WorkItemEntity> T getOwnerWorkItem(){
 
                     /**
 	* Label: Activity level
-	* Description: The active level. , 0: active status, 
+	* Description: The active level. , , 0: active status
 	*/
     public Long getActivityLevel(){
 	    final FieldModel activity_level = wrappedEntityModel.getValue("activity_level");
@@ -149,7 +149,7 @@ public <T extends WorkItemEntity> T getOwnerWorkItem(){
 
     /**
 	* Label: Activity level
-	* Description: The active level. , 0: active status, 
+	* Description: The active level. , , 0: active status
 	*/
     public Long getUserActivationStatus(){
 	    final FieldModel user_activation_status = wrappedEntityModel.getValue("user_activation_status");

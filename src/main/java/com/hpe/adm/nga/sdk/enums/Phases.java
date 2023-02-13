@@ -10,7 +10,7 @@ import java.util.Arrays;
 public final class Phases {
 
     public enum ProcessActionPhase {
-                IN_PROGRESS("phase.process_action.inprogress")        , ABORTED("phase.process_action.aborted")        , FAILED("phase.process_action.failed")        , COMPLETED("phase.process_action.completed")        , SKIPPED("phase.process_action.skipped")        , PLANNED("phase.process_action.planned")        , SCHEDULED("phase.process_action.scheduled")        , PENDING("phase.process_action.pending");
+                SCHEDULED("phase.process_action.scheduled")        , IN_PROGRESS("phase.process_action.inprogress")        , FAILED("phase.process_action.failed")        , SKIPPED("phase.process_action.skipped")        , PLANNED("phase.process_action.planned")        , COMPLETED("phase.process_action.completed")        , PENDING("phase.process_action.pending")        , ABORTED("phase.process_action.aborted");
 
         private final String id;
 
@@ -39,7 +39,7 @@ public final class Phases {
     }
 
     public enum TaskPhase {
-                COMPLETED("phase.task.completed")        , NEW("phase.task.new")        , IN_PROGRESS("phase.task.inprogress");
+                IN_PROGRESS("phase.task.inprogress")        , NEW("phase.task.new")        , COMPLETED("phase.task.completed");
 
         private final String id;
 
@@ -68,7 +68,7 @@ public final class Phases {
     }
 
     public enum EpicPhase {
-                DONE("phase.epic.done")        , IN_TESTING("phase.epic.intesting")        , IN_PROGRESS("phase.epic.inprogress")        , NEW("phase.epic.new");
+                DONE("phase.epic.done")        , IN_PROGRESS("phase.epic.inprogress")        , NEW("phase.epic.new")        , IN_TESTING("phase.epic.intesting");
 
         private final String id;
 
@@ -97,7 +97,7 @@ public final class Phases {
     }
 
     public enum QualityStoryPhase {
-                NEW("phase.quality_story.new")        , DONE("phase.quality_story.done")        , IN_PROGRESS("phase.quality_story.inprogress");
+                DONE("phase.quality_story.done")        , IN_PROGRESS("phase.quality_story.inprogress")        , NEW("phase.quality_story.new");
 
         private final String id;
 
@@ -126,7 +126,7 @@ public final class Phases {
     }
 
     public enum ReleaseStagePhase {
-                SKIPPED("phase.release_stage.skipped")        , IN_PROGRESS("phase.release_stage.inprogress")        , PLANNED("phase.release_stage.planned")        , FAILED("phase.release_stage.failed")        , ABORTED("phase.release_stage.aborted")        , COMPLETED("phase.release_stage.completed")        , FAILING("phase.release_stage.failing")        , SCHEDULED("phase.release_stage.scheduled");
+                SKIPPED("phase.release_stage.skipped")        , COMPLETED("phase.release_stage.completed")        , FAILED("phase.release_stage.failed")        , FAILING("phase.release_stage.failing")        , ABORTED("phase.release_stage.aborted")        , SCHEDULED("phase.release_stage.scheduled")        , PLANNED("phase.release_stage.planned")        , IN_PROGRESS("phase.release_stage.inprogress");
 
         private final String id;
 
@@ -155,7 +155,7 @@ public final class Phases {
     }
 
     public enum UnitPhase {
-                NEW("phase.unit.new")        , IN_DESIGN("phase.unit.indesign")        , OBSOLETE("phase.unit.obsolete")        , READY("phase.unit.ready")        , AWAITING_REVIEW("phase.unit.awaitingreview");
+                OBSOLETE("phase.unit.obsolete")        , READY("phase.unit.ready")        , AWAITING_REVIEW("phase.unit.awaitingreview")        , IN_DESIGN("phase.unit.indesign")        , NEW("phase.unit.new");
 
         private final String id;
 
@@ -184,7 +184,7 @@ public final class Phases {
     }
 
     public enum FeaturePhase {
-                DONE("phase.feature.done")        , IN_TESTING("phase.feature.intesting")        , IN_PROGRESS("phase.feature.inprogress")        , NEW("phase.feature.new");
+                IN_PROGRESS("phase.feature.inprogress")        , IN_TESTING("phase.feature.intesting")        , DONE("phase.feature.done")        , NEW("phase.feature.new");
 
         private final String id;
 
@@ -213,7 +213,7 @@ public final class Phases {
     }
 
     public enum GherkinTestPhase {
-                OBSOLETE("phase.gherkin_test.obsolete")        , IN_DESIGN("phase.gherkin_test.indesign")        , READY("phase.gherkin_test.ready")        , AWAITING_REVIEW("phase.gherkin_test.awaitingreview")        , NEW("phase.gherkin_test.new");
+                IN_DESIGN("phase.gherkin_test.indesign")        , OBSOLETE("phase.gherkin_test.obsolete")        , READY("phase.gherkin_test.ready")        , AWAITING_REVIEW("phase.gherkin_test.awaitingreview")        , NEW("phase.gherkin_test.new");
 
         private final String id;
 
@@ -242,7 +242,7 @@ public final class Phases {
     }
 
     public enum BddSpecPhase {
-                IN_DESIGN("phase.bdd_spec.indesign")        , READY("phase.bdd_spec.ready")        , OBSOLETE("phase.bdd_spec.obsolete")        , AWAITING_REVIEW("phase.bdd_spec.awaitingreview")        , NEW("phase.bdd_spec.new");
+                READY("phase.bdd_spec.ready")        , IN_DESIGN("phase.bdd_spec.indesign")        , OBSOLETE("phase.bdd_spec.obsolete")        , AWAITING_REVIEW("phase.bdd_spec.awaitingreview")        , NEW("phase.bdd_spec.new");
 
         private final String id;
 
@@ -271,7 +271,7 @@ public final class Phases {
     }
 
     public enum ModelPhase {
-                NEW("phase.model.new")        , READY("phase.model.ready")        , IN_DESIGN("phase.model.indesign")        , OBSOLETE("phase.model.obsolete")        , AWAITING_REVIEW("phase.model.awaitingreview");
+                IN_DESIGN("phase.model.indesign")        , OBSOLETE("phase.model.obsolete")        , AWAITING_REVIEW("phase.model.awaitingreview")        , NEW("phase.model.new")        , READY("phase.model.ready");
 
         private final String id;
 
@@ -300,7 +300,7 @@ public final class Phases {
     }
 
     public enum ProcessGroupPhase {
-                FAILED("phase.process_group.failed")        , SKIPPED("phase.process_group.skipped")        , SCHEDULED("phase.process_group.scheduled")        , ABORTED("phase.process_group.aborted")        , IN_PROGRESS("phase.process_group.inprogress")        , COMPLETED("phase.process_group.completed")        , PLANNED("phase.process_group.planned")        , FAILING("phase.process_group.failing");
+                SCHEDULED("phase.process_group.scheduled")        , ABORTED("phase.process_group.aborted")        , PLANNED("phase.process_group.planned")        , FAILING("phase.process_group.failing")        , SKIPPED("phase.process_group.skipped")        , IN_PROGRESS("phase.process_group.inprogress")        , COMPLETED("phase.process_group.completed")        , FAILED("phase.process_group.failed");
 
         private final String id;
 
@@ -329,7 +329,7 @@ public final class Phases {
     }
 
     public enum ModelBasedTestPhase {
-                AWAITING_REVIEW("phase.model_based_test.awaitingreview")        , OBSOLETE("phase.model_based_test.obsolete")        , NEW("phase.model_based_test.new")        , READY("phase.model_based_test.ready")        , IN_DESIGN("phase.model_based_test.indesign");
+                NEW("phase.model_based_test.new")        , OBSOLETE("phase.model_based_test.obsolete")        , READY("phase.model_based_test.ready")        , AWAITING_REVIEW("phase.model_based_test.awaitingreview")        , IN_DESIGN("phase.model_based_test.indesign");
 
         private final String id;
 
@@ -358,7 +358,7 @@ public final class Phases {
     }
 
     public enum DefectPhase {
-                NEW("phase.defect.new")        , DEFERRED("phase.defect.deferred")        , PROPOSED_CLOSED("phase.defect.proposeclose")        , OPENED("phase.defect.opened")        , DUPLICATE("phase.defect.duplicate")        , REJECTED("phase.defect.rejected")        , CLOSED("phase.defect.closed")        , FIXED("phase.defect.fixed");
+                NEW("phase.defect.new")        , REJECTED("phase.defect.rejected")        , FIXED("phase.defect.fixed")        , PROPOSED_CLOSED("phase.defect.proposeclose")        , CLOSED("phase.defect.closed")        , DUPLICATE("phase.defect.duplicate")        , OPENED("phase.defect.opened")        , DEFERRED("phase.defect.deferred");
 
         private final String id;
 
@@ -387,7 +387,7 @@ public final class Phases {
     }
 
     public enum TestManualPhase {
-                READY("phase.test_manual.ready")        , AWAITING_REVIEW("phase.test_manual.awaitingreview")        , OBSOLETE("phase.test_manual.obsolete")        , NEW("phase.test_manual.new")        , IN_DESIGN("phase.test_manual.indesign");
+                OBSOLETE("phase.test_manual.obsolete")        , AWAITING_REVIEW("phase.test_manual.awaitingreview")        , READY("phase.test_manual.ready")        , NEW("phase.test_manual.new")        , IN_DESIGN("phase.test_manual.indesign");
 
         private final String id;
 
@@ -416,7 +416,7 @@ public final class Phases {
     }
 
     public enum StoryPhase {
-                DONE("phase.story.done")        , IN_PROGRESS("phase.story.inprogress")        , IN_TESTING("phase.story.intesting")        , NEW("phase.story.new");
+                NEW("phase.story.new")        , DONE("phase.story.done")        , IN_PROGRESS("phase.story.inprogress")        , IN_TESTING("phase.story.intesting");
 
         private final String id;
 
@@ -445,7 +445,7 @@ public final class Phases {
     }
 
     public enum ProcessAutoActionPhase {
-                FAILED("phase.process_auto_action.failed")        , PENDING("phase.process_auto_action.pending")        , SKIPPED("phase.process_auto_action.skipped")        , ABORTED("phase.process_auto_action.aborted")        , SCHEDULED("phase.process_auto_action.scheduled")        , IN_PROGRESS("phase.process_auto_action.inprogress")        , COMPLETED("phase.process_auto_action.completed")        , PLANNED("phase.process_auto_action.planned");
+                FAILED("phase.process_auto_action.failed")        , PLANNED("phase.process_auto_action.planned")        , PENDING("phase.process_auto_action.pending")        , SKIPPED("phase.process_auto_action.skipped")        , ABORTED("phase.process_auto_action.aborted")        , COMPLETED("phase.process_auto_action.completed")        , SCHEDULED("phase.process_auto_action.scheduled")        , IN_PROGRESS("phase.process_auto_action.inprogress");
 
         private final String id;
 
@@ -474,7 +474,7 @@ public final class Phases {
     }
 
     public enum ReleaseProcessPhase {
-                COMPLETED("phase.release_process.completed")        , PLANNED("phase.release_process.planned")        , IN_PROGRESS("phase.release_process.inprogress")        , FAILING("phase.release_process.failing")        , FAILED("phase.release_process.failed")        , ABORTED("phase.release_process.aborted")        , SCHEDULED("phase.release_process.scheduled");
+                COMPLETED("phase.release_process.completed")        , FAILING("phase.release_process.failing")        , PLANNED("phase.release_process.planned")        , FAILED("phase.release_process.failed")        , ABORTED("phase.release_process.aborted")        , IN_PROGRESS("phase.release_process.inprogress")        , SCHEDULED("phase.release_process.scheduled");
 
         private final String id;
 
@@ -503,7 +503,7 @@ public final class Phases {
     }
 
     public enum RequirementDocumentPhase {
-                IN_REVIEW("phase.requirement_document.inreview")        , DRAFT("phase.requirement_document.draft")        , ACCEPTED("phase.requirement_document.accepted")        , DEFERRED("phase.requirement_document.deferred")        , APPROVED("phase.requirement_document.approved")        , REJECTED("phase.requirement_document.rejected")        , IN_DESIGN("phase.requirement_document.indesign");
+                APPROVED("phase.requirement_document.approved")        , ACCEPTED("phase.requirement_document.accepted")        , REJECTED("phase.requirement_document.rejected")        , IN_REVIEW("phase.requirement_document.inreview")        , DRAFT("phase.requirement_document.draft")        , IN_DESIGN("phase.requirement_document.indesign")        , DEFERRED("phase.requirement_document.deferred");
 
         private final String id;
 
@@ -532,7 +532,7 @@ public final class Phases {
     }
 
     public enum ProcessQualityGatePhase {
-                COMPLETED("phase.process_quality_gate.completed")        , PENDING("phase.process_quality_gate.pending")        , ABORTED("phase.process_quality_gate.aborted")        , SKIPPED("phase.process_quality_gate.skipped")        , IN_PROGRESS("phase.process_quality_gate.inprogress")        , PLANNED("phase.process_quality_gate.planned")        , SCHEDULED("phase.process_quality_gate.scheduled")        , FAILED("phase.process_quality_gate.failed");
+                SCHEDULED("phase.process_quality_gate.scheduled")        , COMPLETED("phase.process_quality_gate.completed")        , SKIPPED("phase.process_quality_gate.skipped")        , PENDING("phase.process_quality_gate.pending")        , FAILED("phase.process_quality_gate.failed")        , PLANNED("phase.process_quality_gate.planned")        , IN_PROGRESS("phase.process_quality_gate.inprogress")        , ABORTED("phase.process_quality_gate.aborted");
 
         private final String id;
 

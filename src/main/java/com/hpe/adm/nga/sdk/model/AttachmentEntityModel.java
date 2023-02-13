@@ -412,10 +412,10 @@ public <T extends TestEntity> T getOwnerTest(){
 			    return (T) new TestAutomatedEntityModel(referenceFieldModel);
 			}else if (referenceType.equals("test_suite")) {
 			    return (T) new TestSuiteEntityModel(referenceFieldModel);
-			}else if (referenceType.equals("test_manual")) {
-			    return (T) new TestManualEntityModel(referenceFieldModel);
 			}else if (referenceType.equals("gherkin_test")) {
 			    return (T) new GherkinTestEntityModel(referenceFieldModel);
+			}else if (referenceType.equals("test_manual")) {
+			    return (T) new TestManualEntityModel(referenceFieldModel);
 			}                return (T) new TestEntityModel(referenceFieldModel);
     }
 
@@ -440,7 +440,7 @@ public <T extends TestEntity> T getOwnerTest(){
         }
 
         @FieldMetadata(filterable = true, sortable = false, required = false)
-        public AttachmentEntityModel setOwnerTest(final TestManualEntityModel ownerTest){
+        public AttachmentEntityModel setOwnerTest(final GherkinTestEntityModel ownerTest){
 			if (ownerTest == null) {
 			    wrappedEntityModel.removeValue("owner_test");
 			} else {
@@ -450,7 +450,7 @@ public <T extends TestEntity> T getOwnerTest(){
         }
 
         @FieldMetadata(filterable = true, sortable = false, required = false)
-        public AttachmentEntityModel setOwnerTest(final GherkinTestEntityModel ownerTest){
+        public AttachmentEntityModel setOwnerTest(final TestManualEntityModel ownerTest){
 			if (ownerTest == null) {
 			    wrappedEntityModel.removeValue("owner_test");
 			} else {

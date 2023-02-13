@@ -18,14 +18,7 @@ public class RequirementEntityModel extends TypedEntityModel implements Requirem
         super(wrappedEntityModel);
     }
 
-            public RequirementEntityModel(    final String name, final RequirementDocumentEntityModel parent, final PhaseEntityModel phase, final String subtype) {
-        this();
-                    setName(name);
-            setParent(parent);
-            setPhase(phase);
-            setSubtype(subtype);
-        }
-        public RequirementEntityModel(    final String name, final RequirementRootEntityModel parent, final PhaseEntityModel phase, final String subtype) {
+            public RequirementEntityModel(    final String name, final RequirementRootEntityModel parent, final PhaseEntityModel phase, final String subtype) {
         this();
                     setName(name);
             setParent(parent);
@@ -33,6 +26,13 @@ public class RequirementEntityModel extends TypedEntityModel implements Requirem
             setSubtype(subtype);
         }
         public RequirementEntityModel(    final String name, final RequirementFolderEntityModel parent, final PhaseEntityModel phase, final String subtype) {
+        this();
+                    setName(name);
+            setParent(parent);
+            setPhase(phase);
+            setSubtype(subtype);
+        }
+        public RequirementEntityModel(    final String name, final RequirementDocumentEntityModel parent, final PhaseEntityModel phase, final String subtype) {
         this();
                     setName(name);
             setParent(parent);

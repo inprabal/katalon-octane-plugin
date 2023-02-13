@@ -18,19 +18,19 @@ public class TaskEntityModel extends TypedEntityModel implements TaskEntity {
         super(wrappedEntityModel);
     }
 
-            public TaskEntityModel(    final String name, final com.hpe.adm.nga.sdk.enums.Phases.TaskPhase phase, final DefectEntityModel story) {
+            public TaskEntityModel(    final String name, final com.hpe.adm.nga.sdk.enums.Phases.TaskPhase phase, final StoryEntityModel story) {
+        this();
+                    setName(name);
+            setPhase(phase);
+            setStory(story);
+        }
+        public TaskEntityModel(    final String name, final com.hpe.adm.nga.sdk.enums.Phases.TaskPhase phase, final DefectEntityModel story) {
         this();
                     setName(name);
             setPhase(phase);
             setStory(story);
         }
         public TaskEntityModel(    final String name, final com.hpe.adm.nga.sdk.enums.Phases.TaskPhase phase, final QualityStoryEntityModel story) {
-        this();
-                    setName(name);
-            setPhase(phase);
-            setStory(story);
-        }
-        public TaskEntityModel(    final String name, final com.hpe.adm.nga.sdk.enums.Phases.TaskPhase phase, final StoryEntityModel story) {
         this();
                     setName(name);
             setPhase(phase);

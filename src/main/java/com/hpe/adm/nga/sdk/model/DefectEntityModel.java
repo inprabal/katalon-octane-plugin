@@ -673,10 +673,10 @@ public java.util.Collection<RunEntity> getRun(){
             final String referenceType = type.getValue();
                             if (referenceType.equals("run_suite")) {
 				    return new RunSuiteEntityModel(entityModel);
-				}                else if (referenceType.equals("run_manual")) {
-				    return new RunManualEntityModel(entityModel);
 				}                else if (referenceType.equals("run_automated")) {
 				    return new RunAutomatedEntityModel(entityModel);
+				}                else if (referenceType.equals("run_manual")) {
+				    return new RunManualEntityModel(entityModel);
 				}                else if (referenceType.equals("gherkin_automated_run")) {
 				    return new GherkinAutomatedRunEntityModel(entityModel);
 				}else {
