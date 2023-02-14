@@ -33,7 +33,11 @@ public class TestBase {
 
     @BeforeClass
     public static void init() {
-        Authentication authentication = AuthenticationUtils.getAuthentication("MyAPItest_ed81wo3m480d8uqx2ye1rw7no", ")1641019824224521252250V");
+        //Authentication authentication = AuthenticationUtils.getAuthentication("MyAPItest_ed81wo3m480d8uqx2ye1rw7no", ")1641019824224521252250V");
+        
+        Authentication authentication = AuthenticationUtils.getAuthentication("APISiteAdmin_kpe081ygknr90i3qgqggm86g5", "%185225231199245253118152H");
+        
+        System.out.println("API Mode "+ authentication.getAPIMode().get().getHeaderKey());
         
         octane = ContextUtils.getContextWorkspace("https://almoctane-apj.saas.microfocus.com", authentication, "179014", "1002");
         siteAdmin = ContextUtils.getContextSiteAdmin("https://almoctane-apj.saas.microfocus.com", authentication);
