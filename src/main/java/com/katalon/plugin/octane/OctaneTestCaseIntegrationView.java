@@ -23,7 +23,7 @@ public class OctaneTestCaseIntegrationView implements TestCaseIntegrationViewDes
 
         container = new Composite(parent, SWT.NONE);
 
-        createLabel("ID");
+        createLabel("Test Case ID");
         txtId = createTextbox();
 
         GridLayout gridLayout = new GridLayout(2, false);

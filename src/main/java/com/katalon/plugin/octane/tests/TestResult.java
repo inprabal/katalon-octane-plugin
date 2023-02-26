@@ -19,23 +19,26 @@ import java.io.Serializable;
 
 final public class TestResult implements Serializable {
 
-    private final String packageName;
+    private final TestSuite testSuite;
+	private final String packageName;
     private final String className;
     private final String testName;
-    private final TestResultStatus result;
+    private TestResultStatus result;
     private final long duration;
     private final long started;
     private String errorType;
     private String errorMsg;
+    private String errorDetail;
     private String stackTraceStr;
 
-    public TestResult(String packageName, String className, String testName, TestResultStatus result, long duration, long started) {
+    public TestResult(TestSuite testSuite,String packageName, String className, String testName, TestResultStatus result, long duration, long started) {
         this.packageName = packageName;
         this.className = className;
         this.testName = testName;
         this.result = result;
         this.duration = duration;
         this.started = started;
+        this.testSuite=testSuite;
     }
 
     public String getPackageName() {
@@ -79,13 +82,20 @@ final public class TestResult implements Serializable {
     public String getStackTraceStr() {
         return stackTraceStr;
     }
+    
+  
+	public TestSuite getTestSuite() {
+		return testSuite;
+	}
 
 	@Override
 	public String toString() {
-		return "TestResult [packageName=" + packageName + ", className=" + className + ", testName=" + testName
-				+ ", result=" + result + ", duration=" + duration + ", started=" + started + ", errorType=" + errorType
-				+ ", errorMsg=" + errorMsg + ", stackTraceStr=" + stackTraceStr + "]";
+		return "TestResult [testSuite=" + testSuite + ", packageName=" + packageName + ", className=" + className
+				+ ", testName=" + testName + ", result=" + result + ", duration=" + duration + ", started=" + started
+				+ ", errorType=" + errorType + ", errorMsg=" + errorMsg + ", stackTraceStr=" + stackTraceStr + "]";
 	}
-    
+	
+
+	
     
 }

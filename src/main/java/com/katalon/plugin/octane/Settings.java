@@ -35,11 +35,15 @@ public class Settings {
     private static final String PROP_SERVER = "server";
     private static final String PROP_SHARED_SPACE = "sharedspace";
     private static final String PROP_WORKSPACE = "workspace";
+    private static final String PROP_CLIENT_ID = "clientID";
+    private static final String PROP_CLIENT_SECRET = "clientSecret";
    
 
     private String server;
     private Integer sharedspace;
     private Integer workspace;
+    private String clientID;
+    private String clientSecret;
 
 
     private boolean checkResult = false;
@@ -74,7 +78,8 @@ public class Settings {
         server = null;//properties.getProperty(PROP_SERVER);
         sharedspace = null;//properties.getProperty(PROP_SHARED_SPACE) != null ? Integer.valueOf(properties.getProperty(PROP_SHARED_SPACE)) : null;
         workspace = null;//properties.getProperty(PROP_WORKSPACE) != null ? Integer.valueOf(properties.getProperty(PROP_WORKSPACE)) : null;
-        
+        clientID=null;
+        clientSecret=null;
     }
 
     public String getServer() {
@@ -88,8 +93,26 @@ public class Settings {
     public Integer getSharedspace() {
         return sharedspace;
     }
+    
+    
 
-    public void setSharedspace(Integer sharedspace) {
+    public String getClientID() {
+		return clientID;
+	}
+
+	public void setClientID(String clientID) {
+		this.clientID = clientID;
+	}
+
+	public String getClientSecret() {
+		return clientSecret;
+	}
+
+	public void setClientSecret(String clientSecret) {
+		this.clientSecret = clientSecret;
+	}
+
+	public void setSharedspace(Integer sharedspace) {
         this.sharedspace = sharedspace;
     }
 

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<test_result>
+	<suite_ref id="1044" external_run_id="Test Suites/AG-Grid Test Suite"></suite_ref>
+	<release_ref id="1002"></release_ref>
+	<product_areas>
+		<product_area_ref id="1018"></product_area_ref>
+	</product_areas>
+	<test_fields>
+		<test_field type="Test_Type" value="ACCEPTANCE"></test_field>
+		<test_field type="Test_Level" value="INTEGRATION_TEST"></test_field>
+		<test_field type="Testing_Tool_Type" value="SELENIUM"></test_field>
+	</test_fields>
+	<environment>
+		<taxonomy type="hostName" value="inpra - DESKTOP-H7OS8JA"></taxonomy>
+		<taxonomy type="os" value="Windows 10 64bit"></taxonomy>
+		<taxonomy type="katalonVersion" value="8.5.8.208"></taxonomy>
+		<taxonomy type="sessionId" value="81c09e6218ff81736df68053c3026f96"></taxonomy>
+		<taxonomy type="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"></taxonomy>
+		<taxonomy type="platform" value="Windows 10"></taxonomy>
+		<taxonomy type="browser" value="Edge Chromium 110"></taxonomy>
+		<taxonomy type="hostAddress" value="192.168.56.1"></taxonomy>
+		<taxonomy type="seleniumVersion" value="3.141.59"></taxonomy>
+	</environment>
+	<test_runs>
+		<test_run package="Test Cases" class="AG-Grid Test" name="AG-Grid Test" status="Failed" duration="47946" started="1677346172966">
+			<error type="FAILED" message="Test Cases/AG-Grid Test FAILED. Reason: com.kms.katalon.core.exception.StepFailedException: My Company name is test. Expected: ends with 'Result is incorrect' with case-sensitive: true. Actual: This is to be test  at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:29)  at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop$0.call(Unknown Source)  at kms.turing.katalon.plugins.assertj.GenericAssert.handleError(GenericAssert.groovy:71)  at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)  at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)  at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)  at kms.turing.katalon.plugins.assertj.GenericAssert.handleError(GenericAssert.groovy:85)  at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)  at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)  at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)  at kms.turing.katalon.plugins.assertj.StringAssert.endsWith(StringAssert.groovy:187)  at kms.turing.katalon.plugins.assertj.StringAssert.endsWith(StringAssert.groovy)  at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)  at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)  at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)  at kms.turing.katalon.plugins.assertj.GenericAssert.invokeMethod(GenericAssert.groovy)  at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)  at AG-Grid Test.run(AG-Grid Test:33)  at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)  at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)  at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)  at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)  at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)  at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)  at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)  at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)  at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)  at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)  at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)  at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)  at TempTestSuite1677346098790.run(TempTestSuite1677346098790.groovy:36)  at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)  at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)  at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)"></error>
+		</test_run>
+	</test_runs>
+</test_result>

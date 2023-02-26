@@ -38,14 +38,14 @@ public class AutomatedtestEntityTest extends TestBase{
 		
 		System.out.println(entity.getUserTags());
 		
-		EntityList entityList_run=octane.entityList("runs");
+		EntityList entityList_run=octane.entityList("suite_run");
 		
 		Collection<EntityModel> entities = new ArrayList<EntityModel>();
 		
 		
 		
 		Set<FieldModel> runFields = new HashSet<>();
-		FieldModel<String> name = new StringFieldModel("name", "sdk_runs_" + UUID.randomUUID());
+		FieldModel<String> name = new StringFieldModel("name", "sdk_suite_" + UUID.randomUUID());
         FieldModel<EntityModel> test = new ReferenceFieldModel("test", entity.getWrappedEntityModel());
 
         runFields.add(name);

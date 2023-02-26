@@ -20,7 +20,8 @@ public enum TestResultStatus {
 
     PASSED("Passed"),
     SKIPPED("Skipped"),
-    FAILED("Failed");
+    FAILED("Failed"),
+	ERROR("Error");
 
     private final String prettyName;
 

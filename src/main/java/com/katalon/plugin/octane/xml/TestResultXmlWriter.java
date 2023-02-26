@@ -19,6 +19,7 @@ import com.katalon.plugin.octane.Settings;
 import com.katalon.plugin.octane.tests.TestResult;
 import com.katalon.plugin.octane.tests.TestResultStatus;
 import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import javax.xml.stream.XMLOutputFactory;
 import javax.xml.stream.XMLStreamException;
@@ -27,6 +28,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -41,7 +43,18 @@ public class TestResultXmlWriter {
     }
 
     public void add(List<TestResult> testResults, Settings settings) throws InterruptedException, XMLStreamException, IOException {
-        Iterator<TestResult> items = testResults.iterator();
+    	//add tags to settings from testresult -> testsuite
+        TestResult testResult0=testResults.get(0);
+        List<String> tags = new ArrayList<>();
+        testResult0.getTestSuite().getProperties().forEach((k, v) -> {
+        	tags.add(k+":"+v);	
+        	
+        });
+        settings.setTags(tags); 
+        if(settings.getSuite()!=null) {
+        	settings.setSuiteExternalRunId(testResult0.getTestSuite().getId());
+        }
+        Iterator<TestResult> items = testResults.iterator();         
         initialize(settings);
 
         while (items.hasNext()) {
@@ -156,7 +169,9 @@ public class TestResultXmlWriter {
         for (String typeValueField : typeValueArray) {
             // Array values were validated - are in TYPE:VALUE format
             String[] typeAndValue = typeValueField.split(":");
-            writeTypeValueField(fieldName, typeAndValue[0], typeAndValue[1]);
+            if(typeAndValue.length==2) {
+            	writeTypeValueField(fieldName, typeAndValue[0], typeAndValue[1]);
+            }
         }
         writer.writeEndElement();
     }

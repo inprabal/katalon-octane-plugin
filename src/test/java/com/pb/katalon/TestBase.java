@@ -41,7 +41,9 @@ public class TestBase {
         
         octane = ContextUtils.getContextWorkspace("https://almoctane-apj.saas.microfocus.com", authentication, "179014", "1002");
         siteAdmin = ContextUtils.getContextSiteAdmin("https://almoctane-apj.saas.microfocus.com", authentication);
-        metadata = octane.metadata();        
+        metadata = octane.metadata(); 
+        
+       
         
      
     }

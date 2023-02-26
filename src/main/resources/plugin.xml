@@ -30,7 +30,16 @@
                 extensionPointId="com.katalon.platform.api.extension.testCaseIntegrationViewDescription"
                 implementationClass="com.katalon.plugin.octane.OctaneTestCaseIntegrationViewDescription">
         </point>
-    </extension>  
+    </extension>
+    
+    <extension
+            point="com.katalon.platform.extensions">
+        <point
+                id="com.katalon.plugin.octane.OctaneTestSuiteIntegrationPage"
+                extensionPointId="com.katalon.platform.api.extension.testSuiteIntegrationViewDescription"
+                implementationClass="com.katalon.plugin.octane.OctaneTestSuiteIntegrationViewDescription">
+        </point>
+    </extension>    
     <!-- TODO -->
     
     <extension

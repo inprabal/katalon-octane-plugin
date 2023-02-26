@@ -25,19 +25,21 @@ import java.util.List;
 
 import javax.xml.stream.XMLStreamException;
 
+import com.katalon.plugin.octane.exception.ValidationException;
 import com.katalon.plugin.octane.tests.TestResult;
+import com.katalon.plugin.octane.tests.TestSuite;
 import com.katalon.plugin.octane.xml.JunitXmlIterator;
 import com.katalon.plugin.octane.xml.TestResultXmlWriter;
 
 public class XmlProcessor {
-
-    public List<TestResult> processJunitTestReport(File junitTestReport, Long started) {
+	
+	
+    public List<TestResult> processJunitTestReport(File junitTestReport, Long started) throws ValidationException {
         if (junitTestReport == null || !junitTestReport.canRead()) {
             String filePathInfo = (junitTestReport == null) ? "" : ": " + junitTestReport.getAbsolutePath();
-            System.out.println("Can not read the JUnit XML file" + filePathInfo);
-            System.exit(ReturnCode.FAILURE.getReturnCode());
+            throw new ValidationException("Can not read the JUnit XML file" + filePathInfo);
         }
-
+        
         List<TestResult> testResults = new LinkedList<TestResult>();
         try {
             JunitXmlIterator iterator = new JunitXmlIterator(junitTestReport, started);
@@ -45,50 +47,42 @@ public class XmlProcessor {
                 testResults.add(iterator.next());
             }
         } catch (IOException e) {
-            System.out.println("Unable to process JUnit XML file '" + junitTestReport.getAbsolutePath() + "': " + e.getMessage());
-            System.exit(ReturnCode.FAILURE.getReturnCode());
+            throw new ValidationException("Unable to process JUnit XML file '" + junitTestReport.getAbsolutePath() + "': " + e.getMessage());
         } catch (XMLStreamException e) {
-            System.out.println("Unable to process JUnit XML file '" + junitTestReport.getAbsolutePath() + "', XML stream exception has occurred: " + e.getMessage());
-            System.exit(ReturnCode.FAILURE.getReturnCode());
+           throw new ValidationException("Unable to process JUnit XML file '" + junitTestReport.getAbsolutePath() + "', XML stream exception has occurred: " + e.getMessage());
         } catch (InterruptedException e) {
-            System.out.println("Unable to process JUnit XML file '" + junitTestReport.getAbsolutePath() + "', thread was interrupted: " + e.getMessage());
-            System.exit(ReturnCode.FAILURE.getReturnCode());
+            throw new ValidationException("Unable to process JUnit XML file '" + junitTestReport.getAbsolutePath() + "', thread was interrupted: " + e.getMessage());
         } catch (RuntimeException e) {
-            System.out.println("Unable to process JUnit XML file '" + junitTestReport.getAbsolutePath() + "', XSD validation was not successful: " + e.getMessage());
-            System.exit(ReturnCode.FAILURE.getReturnCode());
+            throw new ValidationException("Unable to process JUnit XML file '" + junitTestReport.getAbsolutePath() + "', XSD validation was not successful: " + e.getMessage());
         }
 
         if (testResults.isEmpty()) {
             System.out.println("No valid test results to push in JUnit XML file '" + junitTestReport.getAbsolutePath() + "'");
-            System.exit(ReturnCode.FAILURE.getReturnCode());
+            throw new ValidationException("No valid test results to push in JUnit XML file '" + junitTestReport.getAbsolutePath() + "'");
         }
         return testResults;
     }
 
-    public void writeTestResults(List<TestResult> testResults, Settings settings, File targetPath) {
-        if (targetPath == null || !targetPath.canWrite()) {
+    public void writeTestResults(List<TestResult> testResults, Settings settings, File targetPath) throws ValidationException {
+        
+    	if (targetPath == null || !targetPath.canWrite()) {
             String filePathInfo = (targetPath == null) ? "" : ": " + targetPath.getAbsolutePath();
-            System.out.println("Can not write test results to file" + filePathInfo);
-            System.exit(ReturnCode.FAILURE.getReturnCode());
+            throw new ValidationException("Can not write test results to file" + filePathInfo);
         }
         TestResultXmlWriter testResultXmlWriter = new TestResultXmlWriter(targetPath);
         try {
             testResultXmlWriter.add(testResults, settings);
         } catch (InterruptedException e) {
-            System.out.println("Unable to process test results to file '" + targetPath.getAbsolutePath() + "', thread was interrupted: " + e.getMessage());
-            System.exit(ReturnCode.FAILURE.getReturnCode());
+            throw new ValidationException("Unable to process test results to file '" + targetPath.getAbsolutePath() + "', thread was interrupted: " + e.getMessage());
         } catch (XMLStreamException e) {
-            System.out.println("Unable to process test results to file '" + targetPath.getAbsolutePath() + "', XML stream exception has occurred: " + e.getMessage());
-            System.exit(ReturnCode.FAILURE.getReturnCode());
+            throw new ValidationException("Unable to process test results to file '" + targetPath.getAbsolutePath() + "', XML stream exception has occurred: " + e.getMessage());
         } catch (IOException e) {
-            System.out.println("Unable to process test results to file '" + targetPath.getAbsolutePath() + "': " + e.getMessage());
-            System.exit(ReturnCode.FAILURE.getReturnCode());
+            throw new ValidationException("Unable to process test results to file '" + targetPath.getAbsolutePath() + "': " + e.getMessage());
         } finally {
             try {
                 testResultXmlWriter.close();
             } catch (XMLStreamException e) {
-                System.out.println("Can not close the XML file'" + targetPath.getAbsolutePath() + "'" + e.getMessage());
-                System.exit(ReturnCode.FAILURE.getReturnCode());
+                throw new ValidationException("Can not close the XML file'" + targetPath.getAbsolutePath() + "'" + e.getMessage());
             }
         }
     }
