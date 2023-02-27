@@ -20,7 +20,17 @@ public class OctaneTestSuiteIntegrationView implements TestSuiteIntegrationView 
 
 	private Composite container;
 
-	private Text txtId;
+	private Text txtSuiteId;
+	
+	private Text txtReleaseId;
+	
+	private Text txtProductAreasId;
+	
+	private Text txtBacklogsId;
+	
+	private Text txtTestLevel;
+	
+	private Text txtTestType;
 
 	private Boolean isEdited = false;
 
@@ -29,7 +39,16 @@ public class OctaneTestSuiteIntegrationView implements TestSuiteIntegrationView 
 		container = new Composite(parent, SWT.NONE);
 
 		createLabel("Suite ID");
-		txtId = createTextbox();
+		txtSuiteId = createTextbox();
+		
+		createLabel("Release ID");
+		txtReleaseId = createTextbox();
+		
+		createLabel("Product Area IDs (Comma seperated)");
+		txtProductAreasId = createTextbox();
+		
+		createLabel("Backlog IDs (Comma seperated)");
+		txtBacklogsId = createTextbox();
 
 		GridLayout gridLayout = new GridLayout(2, false);
 		gridLayout.verticalSpacing = 10;
@@ -48,12 +67,41 @@ public class OctaneTestSuiteIntegrationView implements TestSuiteIntegrationView 
 		
 		if (integration != null) {
 			Map<String, String> integrationProps = integration.getProperties();
-			if (integrationProps.containsKey(OctaneConstants.INTEGRATION_TESTCASE_ID)) {
-				txtId.setText(integrationProps.get(OctaneConstants.INTEGRATION_TESTCASE_ID)!=null?integrationProps.get(OctaneConstants.INTEGRATION_TESTCASE_ID):"");
+			if (integrationProps.containsKey(OctaneConstants.INTEGRATION_TESTSUITE_ID)) {
+				txtSuiteId.setText(integrationProps.get(OctaneConstants.INTEGRATION_TESTSUITE_ID)!=null?integrationProps.get(OctaneConstants.INTEGRATION_TESTSUITE_ID):"");
 			}
+			
+			if (integrationProps.containsKey(OctaneConstants.INTEGRATION_RELEASE_ID)) {
+				txtReleaseId.setText(integrationProps.get(OctaneConstants.INTEGRATION_RELEASE_ID)!=null?integrationProps.get(OctaneConstants.INTEGRATION_RELEASE_ID):"");
+			}
+			
+			if (integrationProps.containsKey(OctaneConstants.INTEGRATION_PRODUCT_AREA_ID)) {
+				txtProductAreasId.setText(integrationProps.get(OctaneConstants.INTEGRATION_PRODUCT_AREA_ID)!=null?integrationProps.get(OctaneConstants.INTEGRATION_PRODUCT_AREA_ID):"");
+			}
+			
+			if (integrationProps.containsKey(OctaneConstants.INTEGRATION_BACKLOGS_ID)) {
+				txtBacklogsId.setText(integrationProps.get(OctaneConstants.INTEGRATION_BACKLOGS_ID)!=null?integrationProps.get(OctaneConstants.INTEGRATION_BACKLOGS_ID):"");
+			}
+			
+		
 		}
 
-		txtId.addModifyListener(modifyEvent -> {
+		txtSuiteId.addModifyListener(modifyEvent -> {
+			isEdited = true;
+			partActionService.markDirty();
+		});
+		
+		txtReleaseId.addModifyListener(modifyEvent -> {
+			isEdited = true;
+			partActionService.markDirty();
+		});
+		
+		txtProductAreasId.addModifyListener(modifyEvent -> {
+			isEdited = true;
+			partActionService.markDirty();
+		});
+		
+		txtBacklogsId.addModifyListener(modifyEvent -> {
 			isEdited = true;
 			partActionService.markDirty();
 		});
@@ -78,8 +126,11 @@ public class OctaneTestSuiteIntegrationView implements TestSuiteIntegrationView 
 
 	@Override
 	public Integration getIntegrationBeforeSaving() {
-		OctaneTestCaseIntegration integration = new OctaneTestCaseIntegration();
-		integration.setTestCaseId(txtId.getText());
+		OctaneTestSuiteIntegration integration = new OctaneTestSuiteIntegration();
+		integration.setTestSuiteId(txtSuiteId.getText());
+		integration.setReleaseId(txtReleaseId.getText());
+		integration.setProductAreasId(txtProductAreasId.getText());
+		integration.setBacklogsId(txtBacklogsId.getText());
 		isEdited = false;
 		return integration;
 	}

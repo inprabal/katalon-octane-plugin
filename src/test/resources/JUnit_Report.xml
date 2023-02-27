@@ -1,192 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Verify Operations" time="104.087" tests="2" failures="1" errors="0">
-   <testsuite name="Verify Operations" tests="2" failures="1" errors="0" time="104.087" skipped="0" timestamp="2023-02-25 13:58:35" hostname="inpra - DESKTOP-H7OS8JA" id="Test Suites/Verify Operations">
+<testsuites name="AG-Grid Test Suite" time="2.421" tests="1" failures="0" errors="1">
+   <testsuite name="AG-Grid Test Suite" tests="1" failures="0" errors="1" time="2.421" skipped="0" timestamp="2023-02-26 23:02:01" hostname="inpra - DESKTOP-H7OS8JA" id="Test Suites/AG-Grid Test Suite">
       <properties>
          <property name="deviceName" value=""/>
          <property name="devicePlatform" value=""/>
-         <property name="logFolder" value="D:\\katalon-projects\\calculator-bdd-tests-master\\Reports\\20230225_135819\\Verify Operations\\20230225_135819"/>
-         <property name="logFiles" value="D:\\katalon-projects\\calculator-bdd-tests-master\\Reports\\20230225_135819\\Verify Operations\\20230225_135819\\execution0.log"/>
+         <property name="logFolder" value="D:\\katalon-projects\\Test Project\\Reports\\20230226_230154\\AG-Grid Test Suite\\20230226_230154"/>
+         <property name="logFiles" value="D:\\katalon-projects\\Test Project\\Reports\\20230226_230154\\AG-Grid Test Suite\\20230226_230154\\execution0.log"/>
          <property name="attachments" value=""/>
          <property name="hostName" value="inpra - DESKTOP-H7OS8JA"/>
+         <property name="hostAddress" value="192.168.56.1"/>
          <property name="os" value="Windows 10 64bit"/>
          <property name="katalonVersion" value="8.5.8.208"/>
-         <property name="browser" value="Edge Chromium 110"/>
-         <property name="hostAddress" value="192.168.56.1"/>
-         <property name="sessionId" value="c7d8e3819f87ed5cbef5bdbe4ee657fb"/>
-         <property name="seleniumVersion" value="3.141.59"/>
-         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
-         <property name="platform" value="Windows 10"/>
       </properties>
-      <testcase name="Test Cases/operations/Verify Divide" time="69.057" classname="Test Cases/operations/Verify Divide" status="PASSED">
-         <system-out><![CDATA[2023-02-25 13:58:37 - [TEST_CASE][PASSED] - Test Cases/operations/Verify Divide: Test Cases/operations/Verify Divide
-
-2023-02-25 13:58:37 - [TEST_STEP][PASSED] - runFeatureFile("Include/features/operations/Divide.feature"): Feature file: 'Include/features/operations/Divide.feature' was passed
-
-2023-02-25 13:58:38 - [MESSAGE][INFO] - Starting run keyword runFeatureFile: 'Include/features/operations/Divide.feature' and extract report to folder: 'D:\katalon-projects\calculator-bdd-tests-master\Reports\20230225_135819\Verify Operations\20230225_135819/cucumber_report/1677313718176'...
-
-2023-02-25 13:58:42 - [TEST_CASE][PASSED] - Start Test Case : SCENARIO Divide by zero: SCENARIO Divide by zero
-
-2023-02-25 13:58:42 - [TEST_STEP][PASSED] - The Calculator page is loaded successfully: The Calculator page is loaded successfully
-
-2023-02-25 13:58:42 - [TEST_CASE][PASSED] - Test Cases/common/The Calculator page is loaded successfully: Test Cases/common/The Calculator page is loaded successfully
-
-2023-02-25 13:58:43 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
-
-2023-02-25 13:58:44 - [MESSAGE][INFO] - Starting 'Edge Chromium' driver
-
-2023-02-25 13:58:48 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
-
-2023-02-25 13:59:16 - [MESSAGE][PASSED] - Browser is opened with url: ''
-
-2023-02-25 13:59:16 - [TEST_STEP][PASSED] - navigateToUrl(baseUrl): Navigate to 'https://katalon-studio-samples.github.io/calculator' successfully
-
-2023-02-25 13:59:20 - [MESSAGE][PASSED] - Navigate to 'https://katalon-studio-samples.github.io/calculator' successfully
-
-2023-02-25 13:59:20 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/common/The Calculator page is loaded successfully' successfully
-
-2023-02-25 13:59:20 - [MESSAGE][PASSED] - The Calculator page is loaded successfully
-
-2023-02-25 13:59:20 - [TEST_STEP][PASSED] - I divide 27 by 20: I divide 27 by 20
-
-2023-02-25 13:59:20 - [TEST_CASE][PASSED] - Test Cases/common/Divide number: Test Cases/common/Divide number
-
-2023-02-25 13:59:21 - [TEST_STEP][PASSED] - ClickNumber.clickNumber(firstOperand.toString()): ClickNumber.clickNumber is PASSED
-
-2023-02-25 13:59:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_digit_2' is clicked on
-
-2023-02-25 13:59:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_digit_7' is clicked on
-
-2023-02-25 13:59:24 - [MESSAGE][PASSED] - ClickNumber.clickNumber is PASSED
-
-2023-02-25 13:59:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_React Calculator/button_divide")): Object: 'Object Repository/Page_React Calculator/button_divide' is clicked on
-
-2023-02-25 13:59:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_divide' is clicked on
-
-2023-02-25 13:59:24 - [TEST_STEP][PASSED] - ClickNumber.clickNumber(secondOperand.toString()): ClickNumber.clickNumber is PASSED
-
-2023-02-25 13:59:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_digit_2' is clicked on
-
-2023-02-25 13:59:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_digit_0' is clicked on
-
-2023-02-25 13:59:25 - [MESSAGE][PASSED] - ClickNumber.clickNumber is PASSED
-
-2023-02-25 13:59:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_React Calculator/button_equal")): Object: 'Object Repository/Page_React Calculator/button_equal' is clicked on
-
-2023-02-25 13:59:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_equal' is clicked on
-
-2023-02-25 13:59:26 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/common/Divide number' successfully
-
-2023-02-25 13:59:26 - [MESSAGE][PASSED] - I divide 27 by 20
-
-2023-02-25 13:59:26 - [TEST_STEP][PASSED] - I get the result 1.35: I get the result 1.35
-
-2023-02-25 13:59:26 - [TEST_CASE][PASSED] - Test Cases/common/Check result: Test Cases/common/Check result
-
-2023-02-25 13:59:27 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/Page_React Calculator/number_input"), $result): Actual text and expected text of test object 'Object Repository/Page_React Calculator/number_input' are matched.
-
-2023-02-25 13:59:27 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_React Calculator/number_input' are matched.
-
-2023-02-25 13:59:27 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/common/Check result' successfully
-
-2023-02-25 13:59:27 - [MESSAGE][PASSED] - I get the result 1.35
-
-2023-02-25 13:59:27 - [TEST_CASE][PASSED] - Start Test Case : SCENARIO Divide by zero: SCENARIO Divide by zero
-
-2023-02-25 13:59:27 - [TEST_STEP][PASSED] - The Calculator page is loaded successfully: The Calculator page is loaded successfully
-
-2023-02-25 13:59:28 - [TEST_CASE][PASSED] - Test Cases/common/The Calculator page is loaded successfully: Test Cases/common/The Calculator page is loaded successfully
-
-2023-02-25 13:59:28 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
-
-2023-02-25 13:59:28 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
-
-2023-02-25 13:59:30 - [MESSAGE][INFO] - Starting 'Edge Chromium' driver
-
-2023-02-25 13:59:32 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
-
-2023-02-25 13:59:34 - [MESSAGE][PASSED] - Browser is opened with url: ''
-
-2023-02-25 13:59:34 - [TEST_STEP][PASSED] - navigateToUrl(baseUrl): Navigate to 'https://katalon-studio-samples.github.io/calculator' successfully
-
-2023-02-25 13:59:38 - [MESSAGE][PASSED] - Navigate to 'https://katalon-studio-samples.github.io/calculator' successfully
-
-2023-02-25 13:59:38 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/common/The Calculator page is loaded successfully' successfully
-
-2023-02-25 13:59:38 - [MESSAGE][PASSED] - The Calculator page is loaded successfully
-
-2023-02-25 13:59:38 - [TEST_STEP][PASSED] - I divide 785 by 25: I divide 785 by 25
-
-2023-02-25 13:59:38 - [TEST_CASE][PASSED] - Test Cases/common/Divide number: Test Cases/common/Divide number
-
-2023-02-25 13:59:38 - [TEST_STEP][PASSED] - ClickNumber.clickNumber(firstOperand.toString()): ClickNumber.clickNumber is PASSED
-
-2023-02-25 13:59:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_digit_7' is clicked on
-
-2023-02-25 13:59:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_digit_8' is clicked on
-
-2023-02-25 13:59:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_digit_5' is clicked on
-
-2023-02-25 13:59:41 - [MESSAGE][PASSED] - ClickNumber.clickNumber is PASSED
-
-2023-02-25 13:59:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_React Calculator/button_divide")): Object: 'Object Repository/Page_React Calculator/button_divide' is clicked on
-
-2023-02-25 13:59:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_divide' is clicked on
-
-2023-02-25 13:59:41 - [TEST_STEP][PASSED] - ClickNumber.clickNumber(secondOperand.toString()): ClickNumber.clickNumber is PASSED
-
-2023-02-25 13:59:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_digit_2' is clicked on
-
-2023-02-25 13:59:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_digit_5' is clicked on
-
-2023-02-25 13:59:42 - [MESSAGE][PASSED] - ClickNumber.clickNumber is PASSED
-
-2023-02-25 13:59:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_React Calculator/button_equal")): Object: 'Object Repository/Page_React Calculator/button_equal' is clicked on
-
-2023-02-25 13:59:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_equal' is clicked on
-
-2023-02-25 13:59:43 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/common/Divide number' successfully
-
-2023-02-25 13:59:43 - [MESSAGE][PASSED] - I divide 785 by 25
-
-2023-02-25 13:59:43 - [TEST_STEP][PASSED] - I get the result 31.4: I get the result 31.4
-
-2023-02-25 13:59:43 - [TEST_CASE][PASSED] - Test Cases/common/Check result: Test Cases/common/Check result
-
-2023-02-25 13:59:43 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/Page_React Calculator/number_input"), $result): Actual text and expected text of test object 'Object Repository/Page_React Calculator/number_input' are matched.
-
-2023-02-25 13:59:43 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_React Calculator/number_input' are matched.
-
-2023-02-25 13:59:43 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/common/Check result' successfully
-
-2023-02-25 13:59:43 - [MESSAGE][PASSED] - I get the result 31.4
-
-2023-02-25 13:59:44 - [MESSAGE][PASSED] - Feature file: 'Include/features/operations/Divide.feature' was passed
-
-2023-02-25 13:59:44 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: Browser is closed
-
-2023-02-25 13:59:44 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
-
-2023-02-25 13:59:46 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
-         <system-err><![CDATA[]]></system-err>
-      </testcase>
-      <testcase name="Test Cases/operations/Verify Plus" time="33.081" classname="Test Cases/operations/Verify Plus" status="FAILED">
-         <failure type="FAILED" message="Test Cases/operations/Verify Plus FAILED.
+      <testcase name="Test Cases/New Test Case" time="1.752" classname="Test Cases/New Test Case" status="ERROR">
+         <error type="ERROR" message="Test Cases/New Test Case FAILED.
 Reason:
-com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/features/operations/Plus.feature' was failed
-	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
-	at com.kms.katalon.core.keyword.internal.KeywordMain$stepFailed$0.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:114)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
-	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
-	at Verify Plus.run(Verify Plus:18)
+org.codehaus.groovy.runtime.InvokerInvocationException: java.lang.AssertionError: [check frog's age] 
+Expecting:
+ &lt;40>
+to be greater than:
+ &lt;50> 
+	at pb.assertj.Assert.invokeMethod(Assert.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at New Test Case.run(New Test Case:25)
 	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
 	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
 	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
@@ -199,25 +35,31 @@ com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/featur
 	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
 	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
 	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
-	at TempTestSuite1677313699333.run(TempTestSuite1677313699333.groovy:36)
+	at TempTestSuite1677432714421.run(TempTestSuite1677432714421.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.AssertionError: [check frog's age] 
+Expecting:
+ &lt;40>
+to be greater than:
+ &lt;50> 
+	at pb.assertj.Assert.assertjThat(Assert.groovy:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	... 19 more
 "/>
-         <system-out><![CDATA[2023-02-25 13:59:46 - [TEST_CASE][FAILED] - Test Cases/operations/Verify Plus: Test Cases/operations/Verify Plus FAILED.
+         <system-out><![CDATA[2023-02-26 23:02:02 - [TEST_CASE][ERROR] - Test Cases/New Test Case: Test Cases/New Test Case FAILED.
 Reason:
-com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/features/operations/Plus.feature' was failed
-	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
-	at com.kms.katalon.core.keyword.internal.KeywordMain$stepFailed$0.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:114)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
-	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
-	at Verify Plus.run(Verify Plus:18)
+org.codehaus.groovy.runtime.InvokerInvocationException: java.lang.AssertionError: [check frog's age] 
+Expecting:
+ <40>
+to be greater than:
+ <50> 
+	at pb.assertj.Assert.invokeMethod(Assert.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at New Test Case.run(New Test Case:25)
 	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
 	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
 	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
@@ -230,101 +72,52 @@ com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/featur
 	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
 	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
 	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
-	at TempTestSuite1677313699333.run(TempTestSuite1677313699333.groovy:36)
+	at TempTestSuite1677432714421.run(TempTestSuite1677432714421.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.AssertionError: [check frog's age] 
+Expecting:
+ <40>
+to be greater than:
+ <50> 
+	at pb.assertj.Assert.assertjThat(Assert.groovy:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	... 19 more
 
 
-2023-02-25 13:59:47 - [TEST_STEP][FAILED] - runFeatureFile("Include/features/operations/Plus.feature"): Keyword runFeatureFile was failed (Root cause: com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/features/operations/Plus.feature' was failed
-	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
-	at com.kms.katalon.core.keyword.internal.KeywordMain$stepFailed$0.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:114)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
-	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
-	at Verify Plus.run(Verify Plus:18)
-	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
-	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
-	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
-	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
-	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
-	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
-	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
-	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
-	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
-	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
-	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
-	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
-	at TempTestSuite1677313699333.run(TempTestSuite1677313699333.groovy:36)
-)
+2023-02-26 23:02:02 - [TEST_STEP][PASSED] - pb.assertj.Assert.assertjThat(IS_EQUALS, 40, 30, "check %s's age", ["frog"]): pb.assertj.Assert.assertjThat is PASSED
 
-2023-02-25 13:59:47 - [MESSAGE][INFO] - Starting run keyword runFeatureFile: 'Include/features/operations/Plus.feature' and extract report to folder: 'D:\katalon-projects\calculator-bdd-tests-master\Reports\20230225_135819\Verify Operations\20230225_135819/cucumber_report/1677313787140'...
+2023-02-26 23:02:03 - [MESSAGE][INFO] - Assert That
 
-2023-02-25 13:59:48 - [TEST_CASE][FAILED] - Start Test Case : SCENARIO Plus: SCENARIO Plus FAILED.
+2023-02-26 23:02:03 - [MESSAGE][INFO] - Assert description check %s's age
+
+2023-02-26 23:02:03 - [MESSAGE][INFO] - Assert arguments [frog]
+
+2023-02-26 23:02:03 - [MESSAGE][PASSED] - pb.assertj.Assert.assertjThat is PASSED
+
+2023-02-26 23:02:03 - [TEST_STEP][PASSED] - kms.turing.katalon.plugins.assertj.StringAssert.contains("", "", ""): The tested text '' contains ''
+
+2023-02-26 23:02:03 - [MESSAGE][INFO] -  with case-sensitive: true
+
+2023-02-26 23:02:03 - [MESSAGE][PASSED] - The tested text '' contains ''
+
+2023-02-26 23:02:03 - [TEST_STEP][FAILED] - pb.assertj.Assert.assertjThat(IS_EQUALS, 40, 50, "check %s's age", ["frog"]): Test Cases/New Test Case FAILED.
 Reason:
-com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/common/Check result' failed
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
-	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
-	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
-	at Common.check_result(Common.groovy:55)
-	at ✽.I get the result 31(D:/katalon-projects/calculator-bdd-tests-master/Include/features/operations/Plus.feature:6)
-Caused by: com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Page_React Calculator/number_input' FAILED.
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
-	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
-	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4749)
-	at Check result.run(Check result:18)
-	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
-	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
-	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
-	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
-	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
-	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
-	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
-	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:142)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
-	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
-	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
-	at Common.check_result(Common.groovy:55)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)
-	at cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:68)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)
-	at cucumber.runner.TestCase.run(TestCase.java:47)
-	at cucumber.runner.Runner.runPickle(Runner.java:44)
-	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
-	at cucumber.runtime.Runtime.run(Runtime.java:106)
-	at cucumber.api.cli.Main.run(Main.java:35)
-	at cucumber.api.cli.Main$run.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
-	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
-	at Verify Plus.run(Verify Plus:18)
+java.lang.AssertionError: [check frog's age] 
+Expecting:
+ <40>
+to be greater than:
+ <50> 
+	at pb.assertj.Assert.assertjThat(Assert.groovy:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at pb.assertj.Assert.invokeMethod(Assert.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at New Test Case.run(New Test Case:25)
 	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
 	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
 	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
@@ -337,127 +130,38 @@ Caused by: com.kms.katalon.core.exception.StepFailedException: Verify element te
 	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
 	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
 	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
-	at TempTestSuite1677313699333.run(TempTestSuite1677313699333.groovy:36)
-Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text '30' and expected text '31' of test object 'Object Repository/Page_React Calculator/number_input' are NOT matched.
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
-	... 58 more
+	at TempTestSuite1677432714421.run(TempTestSuite1677432714421.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 
 
-2023-02-25 13:59:48 - [TEST_STEP][PASSED] - The Calculator page is loaded successfully: The Calculator page is loaded successfully
+2023-02-26 23:02:03 - [MESSAGE][INFO] - Assert That
 
-2023-02-25 13:59:48 - [TEST_CASE][PASSED] - Test Cases/common/The Calculator page is loaded successfully: Test Cases/common/The Calculator page is loaded successfully
+2023-02-26 23:02:03 - [MESSAGE][INFO] - Assert description check %s's age
 
-2023-02-25 13:59:48 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+2023-02-26 23:02:03 - [MESSAGE][INFO] - Assert arguments [frog]
 
-2023-02-25 13:59:49 - [MESSAGE][INFO] - Starting 'Edge Chromium' driver
+2023-02-26 23:02:03 - [MESSAGE][FAILED] - java.lang.AssertionError: [check frog's age] 
+Expecting:
+ <40>
+to be greater than:
+ <50> 
 
-2023-02-25 13:59:51 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
-
-2023-02-25 13:59:53 - [MESSAGE][PASSED] - Browser is opened with url: ''
-
-2023-02-25 13:59:53 - [TEST_STEP][PASSED] - navigateToUrl(baseUrl): Navigate to 'https://katalon-studio-samples.github.io/calculator' successfully
-
-2023-02-25 13:59:56 - [MESSAGE][PASSED] - Navigate to 'https://katalon-studio-samples.github.io/calculator' successfully
-
-2023-02-25 13:59:56 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/common/The Calculator page is loaded successfully' successfully
-
-2023-02-25 13:59:56 - [MESSAGE][PASSED] - The Calculator page is loaded successfully
-
-2023-02-25 13:59:56 - [TEST_STEP][PASSED] - 10 plus 20: 10 plus 20
-
-2023-02-25 13:59:56 - [TEST_CASE][PASSED] - Test Cases/common/Plus number: Test Cases/common/Plus number
-
-2023-02-25 13:59:57 - [TEST_STEP][PASSED] - ClickNumber.clickNumber(firstOperand.toString()): ClickNumber.clickNumber is PASSED
-
-2023-02-25 13:59:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_digit_1' is clicked on
-
-2023-02-25 13:59:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_digit_0' is clicked on
-
-2023-02-25 13:59:58 - [MESSAGE][PASSED] - ClickNumber.clickNumber is PASSED
-
-2023-02-25 13:59:58 - [TEST_STEP][PASSED] - click(findTestObject("Page_React Calculator/button_plus")): Object: 'Object Repository/Page_React Calculator/button_plus' is clicked on
-
-2023-02-25 13:59:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_plus' is clicked on
-
-2023-02-25 13:59:59 - [TEST_STEP][PASSED] - ClickNumber.clickNumber(secondOperand.toString()): ClickNumber.clickNumber is PASSED
-
-2023-02-25 13:59:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_digit_2' is clicked on
-
-2023-02-25 14:00:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_digit_0' is clicked on
-
-2023-02-25 14:00:00 - [MESSAGE][PASSED] - ClickNumber.clickNumber is PASSED
-
-2023-02-25 14:00:00 - [TEST_STEP][PASSED] - click(findTestObject("Page_React Calculator/button_equal")): Object: 'Object Repository/Page_React Calculator/button_equal' is clicked on
-
-2023-02-25 14:00:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_equal' is clicked on
-
-2023-02-25 14:00:00 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/common/Plus number' successfully
-
-2023-02-25 14:00:00 - [MESSAGE][PASSED] - 10 plus 20
-
-2023-02-25 14:00:00 - [TEST_STEP][FAILED] - I get the result 31: I get the result 31 FAILED.
+2023-02-26 23:02:03 - [MESSAGE][FAILED] - Test Cases/New Test Case FAILED.
 Reason:
-com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/common/Check result' failed
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
-	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
-	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
-	at Common.check_result(Common.groovy:55)
-	at ✽.I get the result 31(D:/katalon-projects/calculator-bdd-tests-master/Include/features/operations/Plus.feature:6)
-Caused by: com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Page_React Calculator/number_input' FAILED.
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
-	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
-	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4749)
-	at Check result.run(Check result:18)
-	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
-	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
-	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
-	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
-	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
-	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
-	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
-	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:142)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
-	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
-	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
-	at Common.check_result(Common.groovy:55)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)
-	at cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:68)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)
-	at cucumber.runner.TestCase.run(TestCase.java:47)
-	at cucumber.runner.Runner.runPickle(Runner.java:44)
-	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
-	at cucumber.runtime.Runtime.run(Runtime.java:106)
-	at cucumber.api.cli.Main.run(Main.java:35)
-	at cucumber.api.cli.Main$run.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
-	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
-	at Verify Plus.run(Verify Plus:18)
+java.lang.AssertionError: [check frog's age] 
+Expecting:
+ <40>
+to be greater than:
+ <50> 
+	at pb.assertj.Assert.assertjThat(Assert.groovy:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at pb.assertj.Assert.invokeMethod(Assert.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at New Test Case.run(New Test Case:25)
 	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
 	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
 	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
@@ -470,65 +174,20 @@ Caused by: com.kms.katalon.core.exception.StepFailedException: Verify element te
 	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
 	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
 	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
-	at TempTestSuite1677313699333.run(TempTestSuite1677313699333.groovy:36)
-Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text '30' and expected text '31' of test object 'Object Repository/Page_React Calculator/number_input' are NOT matched.
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
-	... 58 more
-
-
-2023-02-25 14:00:01 - [TEST_CASE][FAILED] - Test Cases/common/Check result: Test Cases/common/Check result FAILED.
+	at TempTestSuite1677432714421.run(TempTestSuite1677432714421.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-out>
+         <system-err><![CDATA[2023-02-26 23:02:02 - [TEST_CASE][ERROR] - Test Cases/New Test Case: Test Cases/New Test Case FAILED.
 Reason:
-com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Page_React Calculator/number_input' FAILED.
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
-	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
-	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4749)
-	at Check result.run(Check result:18)
-	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
-	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
-	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
-	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
-	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
-	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
-	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
-	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:142)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
-	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
-	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
-	at Common.check_result(Common.groovy:55)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)
-	at cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:68)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)
-	at cucumber.runner.TestCase.run(TestCase.java:47)
-	at cucumber.runner.Runner.runPickle(Runner.java:44)
-	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
-	at cucumber.runtime.Runtime.run(Runtime.java:106)
-	at cucumber.api.cli.Main.run(Main.java:35)
-	at cucumber.api.cli.Main$run.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
-	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
-	at Verify Plus.run(Verify Plus:18)
+org.codehaus.groovy.runtime.InvokerInvocationException: java.lang.AssertionError: [check frog's age] 
+Expecting:
+ <40>
+to be greater than:
+ <50> 
+	at pb.assertj.Assert.invokeMethod(Assert.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at New Test Case.run(New Test Case:25)
 	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
 	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
 	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
@@ -541,528 +200,31 @@ com.kms.katalon.core.exception.StepFailedException: Verify element text of test 
 	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
 	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
 	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
-	at TempTestSuite1677313699333.run(TempTestSuite1677313699333.groovy:36)
-Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text '30' and expected text '31' of test object 'Object Repository/Page_React Calculator/number_input' are NOT matched.
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
-	... 58 more
-
-
-2023-02-25 14:00:01 - [TEST_STEP][FAILED] - verifyElementText(findTestObject("Object Repository/Page_React Calculator/number_input"), $result): Verify element text of test object 'Object Repository/Page_React Calculator/number_input' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Page_React Calculator/number_input' FAILED.
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
-	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
-	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4749)
-	at Check result.run(Check result:18)
-	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
-	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
-	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
-	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
-	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
-	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
-	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
-	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:142)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
-	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
-	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
-	at Common.check_result(Common.groovy:55)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)
-	at cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:68)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)
-	at cucumber.runner.TestCase.run(TestCase.java:47)
-	at cucumber.runner.Runner.runPickle(Runner.java:44)
-	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
-	at cucumber.runtime.Runtime.run(Runtime.java:106)
-	at cucumber.api.cli.Main.run(Main.java:35)
-	at cucumber.api.cli.Main$run.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
-	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
-	at Verify Plus.run(Verify Plus:18)
-	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
-	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
-	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
-	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
-	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
-	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
-	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
-	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
-	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
-	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
-	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
-	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
-	at TempTestSuite1677313699333.run(TempTestSuite1677313699333.groovy:36)
-Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text '30' and expected text '31' of test object 'Object Repository/Page_React Calculator/number_input' are NOT matched.
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
-	... 58 more
-)
-
-2023-02-25 14:00:01 - [MESSAGE][FAILED] - Actual text '30' and expected text '31' of test object 'Object Repository/Page_React Calculator/number_input' are NOT matched. (Root cause: com.kms.katalon.core.exception.StepFailedException: Actual text '30' and expected text '31' of test object 'Object Repository/Page_React Calculator/number_input' are NOT matched.
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
-	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
-	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4749)
-	at Check result.run(Check result:18)
-	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
-	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
-	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
-	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
-	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
-	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
-	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
-	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:142)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
-	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
-	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
-	at Common.check_result(Common.groovy:55)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)
-	at cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:68)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)
-	at cucumber.runner.TestCase.run(TestCase.java:47)
-	at cucumber.runner.Runner.runPickle(Runner.java:44)
-	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
-	at cucumber.runtime.Runtime.run(Runtime.java:106)
-	at cucumber.api.cli.Main.run(Main.java:35)
-	at cucumber.api.cli.Main$run.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
-	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
-	at Verify Plus.run(Verify Plus:18)
-	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
-	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
-	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
-	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
-	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
-	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
-	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
-	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
-	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
-	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
-	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
-	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
-	at TempTestSuite1677313699333.run(TempTestSuite1677313699333.groovy:36)
-)
-
-2023-02-25 14:00:02 - [MESSAGE][FAILED] - Verify element text of test object 'Object Repository/Page_React Calculator/number_input' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Page_React Calculator/number_input' FAILED.
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
-	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
-	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4749)
-	at Check result.run(Check result:18)
-	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
-	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
-	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
-	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
-	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
-	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
-	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
-	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:142)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
-	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
-	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
-	at Common.check_result(Common.groovy:55)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)
-	at cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:68)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)
-	at cucumber.runner.TestCase.run(TestCase.java:47)
-	at cucumber.runner.Runner.runPickle(Runner.java:44)
-	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
-	at cucumber.runtime.Runtime.run(Runtime.java:106)
-	at cucumber.api.cli.Main.run(Main.java:35)
-	at cucumber.api.cli.Main$run.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
-	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
-	at Verify Plus.run(Verify Plus:18)
-	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
-	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
-	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
-	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
-	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
-	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
-	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
-	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
-	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
-	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
-	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
-	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
-	at TempTestSuite1677313699333.run(TempTestSuite1677313699333.groovy:36)
-Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text '30' and expected text '31' of test object 'Object Repository/Page_React Calculator/number_input' are NOT matched.
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
-	... 58 more
-)
-
-2023-02-25 14:00:02 - [MESSAGE][FAILED] - Unable to call Test Case 'Test Cases/common/Check result' (Root cause: com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/common/Check result' failed
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
-	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
-	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
-	at Common.check_result(Common.groovy:55)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)
-	at cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:68)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)
-	at cucumber.runner.TestCase.run(TestCase.java:47)
-	at cucumber.runner.Runner.runPickle(Runner.java:44)
-	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
-	at cucumber.runtime.Runtime.run(Runtime.java:106)
-	at cucumber.api.cli.Main.run(Main.java:35)
-	at cucumber.api.cli.Main$run.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
-	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
-	at Verify Plus.run(Verify Plus:18)
-	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
-	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
-	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
-	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
-	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
-	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
-	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
-	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
-	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
-	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
-	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
-	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
-	at TempTestSuite1677313699333.run(TempTestSuite1677313699333.groovy:36)
-Caused by: com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Page_React Calculator/number_input' FAILED.
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
-	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
-	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4749)
-	at Check result.run(Check result:18)
-	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
-	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
-	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
-	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
-	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
-	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
-	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
-	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:142)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
-	... 44 more
-Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text '30' and expected text '31' of test object 'Object Repository/Page_React Calculator/number_input' are NOT matched.
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
-	... 58 more
-)
-
-2023-02-25 14:00:02 - [MESSAGE][FAILED] - I get the result 31 FAILED.
-Reason:
-com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/common/Check result' failed
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
-	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
-	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
-	at Common.check_result(Common.groovy:55)
-	at ✽.I get the result 31(D:/katalon-projects/calculator-bdd-tests-master/Include/features/operations/Plus.feature:6)
-Caused by: com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Page_React Calculator/number_input' FAILED.
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
-	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
-	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4749)
-	at Check result.run(Check result:18)
-	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
-	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
-	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
-	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
-	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
-	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
-	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
-	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:142)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
-	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
-	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
-	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
-	at Common.check_result(Common.groovy:55)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)
-	at cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:68)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)
-	at cucumber.runner.TestCase.run(TestCase.java:47)
-	at cucumber.runner.Runner.runPickle(Runner.java:44)
-	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
-	at cucumber.runtime.Runtime.run(Runtime.java:106)
-	at cucumber.api.cli.Main.run(Main.java:35)
-	at cucumber.api.cli.Main$run.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
-	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
-	at Verify Plus.run(Verify Plus:18)
-	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
-	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
-	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
-	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
-	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
-	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
-	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
-	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
-	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
-	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
-	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
-	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
-	at TempTestSuite1677313699333.run(TempTestSuite1677313699333.groovy:36)
-Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text '30' and expected text '31' of test object 'Object Repository/Page_React Calculator/number_input' are NOT matched.
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
-	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
-	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
-	... 58 more
-
-
-2023-02-25 14:00:02 - [TEST_CASE][PASSED] - Start Test Case : SCENARIO Plus: SCENARIO Plus
-
-2023-02-25 14:00:02 - [TEST_STEP][PASSED] - The Calculator page is loaded successfully: The Calculator page is loaded successfully
-
-2023-02-25 14:00:02 - [TEST_CASE][PASSED] - Test Cases/common/The Calculator page is loaded successfully: Test Cases/common/The Calculator page is loaded successfully
-
-2023-02-25 14:00:02 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
-
-2023-02-25 14:00:02 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
-
-2023-02-25 14:00:03 - [MESSAGE][INFO] - Starting 'Edge Chromium' driver
-
-2023-02-25 14:00:05 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
-
-2023-02-25 14:00:07 - [MESSAGE][PASSED] - Browser is opened with url: ''
-
-2023-02-25 14:00:07 - [TEST_STEP][PASSED] - navigateToUrl(baseUrl): Navigate to 'https://katalon-studio-samples.github.io/calculator' successfully
-
-2023-02-25 14:00:12 - [MESSAGE][PASSED] - Navigate to 'https://katalon-studio-samples.github.io/calculator' successfully
-
-2023-02-25 14:00:12 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/common/The Calculator page is loaded successfully' successfully
-
-2023-02-25 14:00:12 - [MESSAGE][PASSED] - The Calculator page is loaded successfully
-
-2023-02-25 14:00:12 - [TEST_STEP][PASSED] - 123 plus 456: 123 plus 456
-
-2023-02-25 14:00:12 - [TEST_CASE][PASSED] - Test Cases/common/Plus number: Test Cases/common/Plus number
-
-2023-02-25 14:00:12 - [TEST_STEP][PASSED] - ClickNumber.clickNumber(firstOperand.toString()): ClickNumber.clickNumber is PASSED
-
-2023-02-25 14:00:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_digit_1' is clicked on
-
-2023-02-25 14:00:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_digit_2' is clicked on
-
-2023-02-25 14:00:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_digit_3' is clicked on
-
-2023-02-25 14:00:14 - [MESSAGE][PASSED] - ClickNumber.clickNumber is PASSED
-
-2023-02-25 14:00:14 - [TEST_STEP][PASSED] - click(findTestObject("Page_React Calculator/button_plus")): Object: 'Object Repository/Page_React Calculator/button_plus' is clicked on
-
-2023-02-25 14:00:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_plus' is clicked on
-
-2023-02-25 14:00:15 - [TEST_STEP][PASSED] - ClickNumber.clickNumber(secondOperand.toString()): ClickNumber.clickNumber is PASSED
-
-2023-02-25 14:00:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_digit_4' is clicked on
-
-2023-02-25 14:00:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_digit_5' is clicked on
-
-2023-02-25 14:00:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_digit_6' is clicked on
-
-2023-02-25 14:00:16 - [MESSAGE][PASSED] - ClickNumber.clickNumber is PASSED
-
-2023-02-25 14:00:16 - [TEST_STEP][PASSED] - click(findTestObject("Page_React Calculator/button_equal")): Object: 'Object Repository/Page_React Calculator/button_equal' is clicked on
-
-2023-02-25 14:00:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_React Calculator/button_equal' is clicked on
-
-2023-02-25 14:00:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/common/Plus number' successfully
-
-2023-02-25 14:00:17 - [MESSAGE][PASSED] - 123 plus 456
-
-2023-02-25 14:00:17 - [TEST_STEP][PASSED] - I get the result 579: I get the result 579
-
-2023-02-25 14:00:17 - [TEST_CASE][PASSED] - Test Cases/common/Check result: Test Cases/common/Check result
-
-2023-02-25 14:00:17 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/Page_React Calculator/number_input"), $result): Actual text and expected text of test object 'Object Repository/Page_React Calculator/number_input' are matched.
-
-2023-02-25 14:00:18 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_React Calculator/number_input' are matched.
-
-2023-02-25 14:00:18 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/common/Check result' successfully
-
-2023-02-25 14:00:18 - [MESSAGE][PASSED] - I get the result 579
-
-2023-02-25 14:00:18 - [MESSAGE][FAILED] - Feature file 'Include/features/operations/Plus.feature' was failed
-
-2023-02-25 14:00:18 - [MESSAGE][FAILED] - Keyword runFeatureFile was failed (Root cause: com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/features/operations/Plus.feature' was failed
-	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
-	at com.kms.katalon.core.keyword.internal.KeywordMain$stepFailed$0.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:114)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
-	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
-	at Verify Plus.run(Verify Plus:18)
-	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
-	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
-	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
-	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
-	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
-	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
-	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
-	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
-	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
-	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
-	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
-	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
-	at TempTestSuite1677313699333.run(TempTestSuite1677313699333.groovy:36)
-)
-
-2023-02-25 14:00:18 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: Browser is closed
-
-2023-02-25 14:00:18 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
-
-2023-02-25 14:00:19 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
-         <system-err><![CDATA[2023-02-25 13:59:46 - [TEST_CASE][FAILED] - Test Cases/operations/Verify Plus: Test Cases/operations/Verify Plus FAILED.
-Reason:
-com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/features/operations/Plus.feature' was failed
-	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
-	at com.kms.katalon.core.keyword.internal.KeywordMain$stepFailed$0.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:114)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
-	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
-	at Verify Plus.run(Verify Plus:18)
-	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
-	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
-	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
-	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
-	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
-	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
-	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
-	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
-	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
-	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
-	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
-	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
-	at TempTestSuite1677313699333.run(TempTestSuite1677313699333.groovy:36)]]></system-err>
+	at TempTestSuite1677432714421.run(TempTestSuite1677432714421.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.AssertionError: [check frog's age] 
+Expecting:
+ <40>
+to be greater than:
+ <50> 
+	at pb.assertj.Assert.assertjThat(Assert.groovy:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	... 19 more]]></system-err>
       </testcase>
-      <system-out><![CDATA[2023-02-25 13:58:35 - [TEST_SUITE][FAILED] - Verify Operations: Test Cases/operations/Verify Plus FAILED.
+      <system-out><![CDATA[2023-02-26 23:02:01 - [TEST_SUITE][ERROR] - AG-Grid Test Suite: Test Cases/New Test Case FAILED.
 Reason:
-com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/features/operations/Plus.feature' was failed
-	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
-	at com.kms.katalon.core.keyword.internal.KeywordMain$stepFailed$0.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:114)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
-	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
-	at Verify Plus.run(Verify Plus:18)
+org.codehaus.groovy.runtime.InvokerInvocationException: java.lang.AssertionError: [check frog's age] 
+Expecting:
+ <40>
+to be greater than:
+ <50> 
+	at pb.assertj.Assert.invokeMethod(Assert.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at New Test Case.run(New Test Case:25)
 	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
 	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
 	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
@@ -1075,24 +237,30 @@ com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/featur
 	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
 	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
 	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
-	at TempTestSuite1677313699333.run(TempTestSuite1677313699333.groovy:36)]]></system-out>
-      <system-err><![CDATA[2023-02-25 13:58:35 - [TEST_SUITE][FAILED] - Verify Operations: Test Cases/operations/Verify Plus FAILED.
+	at TempTestSuite1677432714421.run(TempTestSuite1677432714421.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.AssertionError: [check frog's age] 
+Expecting:
+ <40>
+to be greater than:
+ <50> 
+	at pb.assertj.Assert.assertjThat(Assert.groovy:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	... 19 more]]></system-out>
+      <system-err><![CDATA[2023-02-26 23:02:01 - [TEST_SUITE][ERROR] - AG-Grid Test Suite: Test Cases/New Test Case FAILED.
 Reason:
-com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/features/operations/Plus.feature' was failed
-	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
-	at com.kms.katalon.core.keyword.internal.KeywordMain$stepFailed$0.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:114)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
-	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
-	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
-	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
-	at Verify Plus.run(Verify Plus:18)
+org.codehaus.groovy.runtime.InvokerInvocationException: java.lang.AssertionError: [check frog's age] 
+Expecting:
+ <40>
+to be greater than:
+ <50> 
+	at pb.assertj.Assert.invokeMethod(Assert.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at New Test Case.run(New Test Case:25)
 	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
 	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
 	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
@@ -1105,6 +273,19 @@ com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/featur
 	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
 	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
 	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
-	at TempTestSuite1677313699333.run(TempTestSuite1677313699333.groovy:36)]]></system-err>
+	at TempTestSuite1677432714421.run(TempTestSuite1677432714421.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.AssertionError: [check frog's age] 
+Expecting:
+ <40>
+to be greater than:
+ <50> 
+	at pb.assertj.Assert.assertjThat(Assert.groovy:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	... 19 more]]></system-err>
    </testsuite>
 </testsuites>

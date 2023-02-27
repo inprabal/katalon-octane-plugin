@@ -15,6 +15,7 @@
  */
 package com.katalon.plugin.octane.xml;
 
+import com.hpe.adm.nga.sdk.enums.lists.list_node.run_native_status.RunNativeStatus;
 import com.katalon.plugin.octane.Settings;
 import com.katalon.plugin.octane.tests.TestResult;
 import com.katalon.plugin.octane.tests.TestResultStatus;
@@ -33,6 +34,30 @@ import java.util.Iterator;
 import java.util.List;
 
 public class TestResultXmlWriter {
+	
+
+	private String mapToOctaneStatus(String ksStatus) {
+		String status;
+		switch (ksStatus) {
+		case "PASSED":
+			status = RunNativeStatus.PASSED.name(); // PASSED
+			break;
+		case "FAILED":
+			status = RunNativeStatus.FAILED.name(); // FAILED
+			break;
+		case "ERROR":
+			status = RunNativeStatus.FAILED.name(); // FAILED
+			break;
+		case "SKIPPED":
+			status = RunNativeStatus.SKIPPED.name(); // FAILED
+			break;
+		default:
+			status = RunNativeStatus.BLOCKED.name();
+			; // BLOCKED
+		}
+		return status;
+	}
+
 
     private File targetPath;
     private XMLStreamWriter writer;

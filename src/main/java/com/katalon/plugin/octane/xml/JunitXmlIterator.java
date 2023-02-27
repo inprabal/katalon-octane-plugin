@@ -31,11 +31,13 @@ import javax.xml.stream.events.XMLEvent;
 
 import org.apache.commons.lang3.StringUtils;
 
+import com.hpe.adm.nga.sdk.enums.lists.list_node.run_native_status.RunNativeStatus;
 import com.katalon.plugin.octane.tests.TestResult;
 import com.katalon.plugin.octane.tests.TestResultStatus;
 import com.katalon.plugin.octane.tests.TestSuite;
 
 public class JunitXmlIterator extends AbstractXmlIterator<TestResult> {
+	
 
 	final String cStart = "<![CDATA[";
 	final String cEnd = "]]>";
@@ -129,7 +131,7 @@ public class JunitXmlIterator extends AbstractXmlIterator<TestResult> {
             }
             else if ("error".equals(localName)) { // NON-NLS
                 allowStackTraceAggregation = true;
-                status = TestResultStatus.ERROR;
+                status = TestResultStatus.FAILED;
                 stackTraceStr = "";
                 attrIterator = element.getAttributes();
                 while (attrIterator.hasNext()) {

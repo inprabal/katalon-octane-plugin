@@ -77,13 +77,14 @@
                         By default the plugin will generate the sources to the generated-source directory under
                         the target.  If you wish to place this in a different place then use this parameter
                     -->
-							<generatedSourcesDirectory>${project.build.sourceDirectory}</generatedSourcesDirectory>
+                    		<generatedSourcesDirectory>${project.build.directory}/generated-sources</generatedSourcesDirectory>
+							<!-- generatedSourcesDirectory>${project.build.sourceDirectory}</generatedSourcesDirectory -->
 						</configuration>
 					</plugin>
 					<plugin>
 						<groupId>org.codehaus.mojo</groupId>
 						<artifactId>build-helper-maven-plugin</artifactId>
-						<version>1.9.1</version>
+						<version>3.2.0</version>
 						<executions>
 							<execution>
 								<id>addGeneratedEntitiesSources</id>
@@ -98,8 +99,8 @@
                                   to use the maven generated-sources directory as the place where the generated
                                   sources will be
                                 -->
-										<!-- source>${project.build.directory}/generated-sources</source -->
-										<source>${project.build.sourceDirectory}</source>
+										<source>${project.build.directory}/generated-sources</source>
+										<!-- source>${project.build.sourceDirectory}</source -->
 									</sources>
 								</configuration>
 							</execution>

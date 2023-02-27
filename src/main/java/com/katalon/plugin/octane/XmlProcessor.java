@@ -25,6 +25,7 @@ import java.util.List;
 
 import javax.xml.stream.XMLStreamException;
 
+import com.hpe.adm.nga.sdk.enums.lists.list_node.run_native_status.RunNativeStatus;
 import com.katalon.plugin.octane.exception.ValidationException;
 import com.katalon.plugin.octane.tests.TestResult;
 import com.katalon.plugin.octane.tests.TestSuite;

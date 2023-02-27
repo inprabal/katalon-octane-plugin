@@ -21,4 +21,16 @@ public interface OctaneConstants {
 
     String INTEGRATION_TESTCASE_ID = "octane.testcase.id";
     
+    String INTEGRATION_TESTSUITE_ID = "octane.testsuite.id";
+    
+    String INTEGRATION_RELEASE_ID = "octane.release.id";
+    
+    String INTEGRATION_PRODUCT_AREA_ID = "octane.product.areas.id";
+    
+    String INTEGRATION_BACKLOGS_ID = "octane.backlogs.id";
+    
+    String INTEGRATION_TEST_TYPE = "octane.test.type";
+    
+    String INTEGRATION_TEST_LEVEL = "octane.test.level";
+    
 }

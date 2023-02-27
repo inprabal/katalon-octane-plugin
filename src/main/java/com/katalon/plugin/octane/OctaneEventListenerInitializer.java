@@ -30,25 +30,7 @@ import com.katalon.plugin.octane.tests.TestResultPushStatus;
 
 public class OctaneEventListenerInitializer implements EventListenerInitializer, OctaneComponent {
 
-	private String mapToOctaneStatus(String ksStatus) {
-		String status;
-		switch (ksStatus) {
-		case "PASSED":
-			status = RunNativeStatus.PASSED.name(); // PASSED
-			break;
-		case "FAILED":
-			status = RunNativeStatus.FAILED.name(); // FAILED
-			break;
-		case "ERROR":
-			status = RunNativeStatus.FAILED.name(); // FAILED
-			break;
-		default:
-			status = RunNativeStatus.BLOCKED.name();
-			; // BLOCKED
-		}
-		return status;
-	}
-
+	
 	@Override
 	public void registerListener(EventListener listener) {
 		listener.on(Event.class, event -> {
