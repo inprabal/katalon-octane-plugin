@@ -1,1 +1,0 @@
-<?xml version="1.0" ?><test_result><test_runs><test_run package="" class="Test Cases/AG-Grid Test" name="Test Cases/AG-Grid Test" status="Passed" duration="58097" started="1677216949795"></test_run></test_runs></test_result>
