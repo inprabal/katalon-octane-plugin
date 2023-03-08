@@ -13,7 +13,7 @@ public class OctanePluginPreferencePage implements PluginPreferencePage {
 
     @Override
     public String getPageId() {
-        return "com.katalon.plugin.testrail.OctanePluginPreferencePage";
+        return "com.katalon.plugin.octane.OctanePluginPreferencePage";
     }
 
     @Override

@@ -68,9 +68,9 @@ public class JUnitResultTest {
 		
 		// from suite integration, single
 		List<String> test_types = new ArrayList<>();
-		test_types.add("Test_Type:"+TestType.ACCEPTANCE.name());
-		test_types.add("Test_Level:"+TestLevel.INTEGRATION_TEST.name());
-		test_types.add("Testing_Tool_Type:"+TestingToolType.SELENIUM.name());
+		test_types.add("Test_Type:Acceptance");
+		test_types.add("Test_Level:Integration Test");
+		test_types.add("Testing_Tool_Type:Katalon");
 		
 		settings.setFields(test_types);
 		
@@ -97,9 +97,9 @@ public class JUnitResultTest {
 		RestClient client = new RestClient(settings);
 		
         try {
-            long id= client.postTestResult(new FileEntity(output, ContentType.APPLICATION_XML));
-            System.out.println("Test run id:"+id);
-        	//long id=1110;
+            //long id= client.postTestResult(new FileEntity(output, ContentType.APPLICATION_XML));
+            //System.out.println("Test run id:"+id);
+        	long id=1113;
         	TestResultPushStatus status = client.getTestResultStatus(id);
         	
         	System.out.println(

@@ -6,6 +6,7 @@ import java.util.Map;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Label;
@@ -28,9 +29,9 @@ public class OctaneTestSuiteIntegrationView implements TestSuiteIntegrationView 
 	
 	private Text txtBacklogsId;
 	
-	private Text txtTestLevel;
+	private Combo txtTestLevel;
 	
-	private Text txtTestType;
+	private Combo txtTestType;
 
 	private Boolean isEdited = false;
 
@@ -49,6 +50,14 @@ public class OctaneTestSuiteIntegrationView implements TestSuiteIntegrationView 
 		
 		createLabel("Backlog IDs (Comma seperated)");
 		txtBacklogsId = createTextbox();
+		
+		createLabel("Test Level");
+		String[] item_levels= {"","Unit Test","System Test","Integration Test"};
+		txtTestLevel = createComboBox(item_levels);
+		
+		createLabel("Test Type");
+		String[] item_types= {"","Acceptance","Regression","End to End","Sanity","Security","UI","API"};
+		txtTestType = createComboBox(item_types);
 
 		GridLayout gridLayout = new GridLayout(2, false);
 		gridLayout.verticalSpacing = 10;
@@ -83,6 +92,14 @@ public class OctaneTestSuiteIntegrationView implements TestSuiteIntegrationView 
 				txtBacklogsId.setText(integrationProps.get(OctaneConstants.INTEGRATION_BACKLOGS_ID)!=null?integrationProps.get(OctaneConstants.INTEGRATION_BACKLOGS_ID):"");
 			}
 			
+			if (integrationProps.containsKey(OctaneConstants.INTEGRATION_TEST_LEVEL)) {
+				txtTestLevel.setText(integrationProps.get(OctaneConstants.INTEGRATION_TEST_LEVEL)!=null?integrationProps.get(OctaneConstants.INTEGRATION_TEST_LEVEL):"");
+			}
+			
+			if (integrationProps.containsKey(OctaneConstants.INTEGRATION_TEST_TYPE)) {
+				txtTestType.setText(integrationProps.get(OctaneConstants.INTEGRATION_TEST_TYPE)!=null?integrationProps.get(OctaneConstants.INTEGRATION_TEST_TYPE):"");
+			}
+			
 		
 		}
 
@@ -105,6 +122,16 @@ public class OctaneTestSuiteIntegrationView implements TestSuiteIntegrationView 
 			isEdited = true;
 			partActionService.markDirty();
 		});
+		
+		txtTestLevel.addModifyListener(modifyEvent -> {
+			isEdited = true;
+			partActionService.markDirty();
+		});
+		
+		txtTestType.addModifyListener(modifyEvent -> {
+			isEdited = true;
+			partActionService.markDirty();
+		});
 
 		return container;
 	}
@@ -123,6 +150,15 @@ public class OctaneTestSuiteIntegrationView implements TestSuiteIntegrationView 
 		GridData gridData = new GridData(SWT.LEFT, SWT.TOP, false, false);
 		label.setLayoutData(gridData);
 	}
+	
+	private Combo createComboBox(String[] items) {
+		Combo combo = new Combo(container, SWT.DROP_DOWN|SWT.READ_ONLY);
+		combo.setItems(items);
+		GridData gridData = new GridData(SWT.FILL, SWT.CENTER, false, false);
+		gridData.widthHint=100;
+		combo.setLayoutData(gridData);
+		return combo;
+	}
 
 	@Override
 	public Integration getIntegrationBeforeSaving() {
@@ -131,6 +167,8 @@ public class OctaneTestSuiteIntegrationView implements TestSuiteIntegrationView 
 		integration.setReleaseId(txtReleaseId.getText());
 		integration.setProductAreasId(txtProductAreasId.getText());
 		integration.setBacklogsId(txtBacklogsId.getText());
+		integration.setTestLevel(txtTestLevel.getText());
+		integration.setTestType(txtTestType.getText());
 		isEdited = false;
 		return integration;
 	}

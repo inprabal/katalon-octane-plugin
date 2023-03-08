@@ -12,6 +12,8 @@ public class OctaneTestSuiteIntegration implements Integration {
     private String releaseId;
     private String productAreasId;
     private String backlogsId;    
+    private String testLevel;
+    private String testType;
     
     public String getTestSuiteId() {
 		return testSuiteId;
@@ -44,6 +46,24 @@ public class OctaneTestSuiteIntegration implements Integration {
 	public void setBacklogsId(String backlogsId) {
 		this.backlogsId = backlogsId;
 	}
+	
+	
+
+	public String getTestLevel() {
+		return testLevel;
+	}
+
+	public void setTestLevel(String testLevel) {
+		this.testLevel = testLevel;
+	}
+
+	public String getTestType() {
+		return testType;
+	}
+
+	public void setTestType(String testType) {
+		this.testType = testType;
+	}
 
 	@Override
     public String getName() {
@@ -57,6 +77,8 @@ public class OctaneTestSuiteIntegration implements Integration {
         props.put(OctaneConstants.INTEGRATION_RELEASE_ID, getReleaseId());
         props.put(OctaneConstants.INTEGRATION_PRODUCT_AREA_ID, getProductAreasId());
         props.put(OctaneConstants.INTEGRATION_BACKLOGS_ID, getBacklogsId());
+        props.put(OctaneConstants.INTEGRATION_TEST_LEVEL, getTestLevel());
+        props.put(OctaneConstants.INTEGRATION_TEST_TYPE, getTestType());
         return props;
     }
 }
